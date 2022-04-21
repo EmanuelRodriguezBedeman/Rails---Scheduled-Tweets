@@ -34,6 +34,7 @@ Rails.application.routes.draw do
   resources :twitter_accounts
 
   #Added something
+  #Added something else
 
   # Root Route
   root "main#index"
