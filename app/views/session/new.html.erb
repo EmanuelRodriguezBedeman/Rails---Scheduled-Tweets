@@ -1,0 +1,19 @@
+<h1>Log in to Schedule Tweets!</h1>
+
+<%= form_with url: log_in_path do |form| %>
+    <div>
+        <div class="mb-1">
+            <%= form.label :Email, class: "form-label" %>
+            <%= form.text_field :email, class: "form-control w-25", placeholder: "email@mail.com" %> 
+        </div>
+
+        <div class="my-3">
+            <%= form.label :password, class: "form-label" %>
+            <%= form.password_field :password, class: "form-control w-25", placeholder: "password" %> 
+        </div>
+        
+        <div>
+            <%= form.submit "Log in", class: "btn btn-primary" %>
+        </div>
+    </div>
+<% end %>

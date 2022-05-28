@@ -1,0 +1,28 @@
+<h1>Sign-up to Schedule Tweets!</h1>
+
+<%= form_with model: @user, url: sign_up_path do |form| %>
+    <% if @user.errors.any? %>
+        <div class="alert alert-danger">
+            <% @user.errors.full_messages.each do |message| %>
+                <div><%= message %></div>
+            <% end %>
+        </div>
+    <% end %>
+    
+    <div class="mb-1">
+        <%= form.label :Email, class: "form-label" %>
+        <%= form.text_field :email, class: "form-control w-25", placeholder: "email@mail.com" %> 
+    </div>
+    <div class="form-text">We'll never share your email with anyone else.</div>
+    <div class="my-3">
+        <%= form.label :password, class: "form-label" %>
+        <%= form.password_field :password, class: "form-control w-25", placeholder: "password" %> 
+    </div>
+    <div class="mb-3">
+        <%= form.label :password_confirmation, class: "form-label" %>
+        <%= form.password_field :password_confirmation, class: "form-control w-25", placeholder: "password" %> 
+    </div>
+    <div>
+        <%= form.submit "Submit", class: "btn btn-primary" %>
+    </div>
+<% end %>

@@ -8,6 +8,11 @@
       <div class="navbar-nav">
         <%= link_to "Home", root_path, class:"nav-link"%>
         <%= link_to "About", about_path, class:"nav-link"%>
+        <% if @user %>
+            <%= button_to "Logout", logout_path, method: :delete, class:"btn btn-light" %>
+        <% else %>
+            <%= link_to "Sign up", sign_up_path, class:"nav-link"%>
+        <% end %>
       </div>
     </div>
   </div>
