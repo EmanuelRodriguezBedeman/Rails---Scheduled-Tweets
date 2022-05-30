@@ -1,19 +1,23 @@
-<h1>Log in to Schedule Tweets!</h1>
+<h1 class="py-3">Log-in to Schedule Tweets!</h1>
 
 <%= form_with url: log_in_path do |form| %>
-    <div>
-        <div class="mb-1">
-            <%= form.label :Email, class: "form-label" %>
-            <%= form.text_field :email, class: "form-control w-25", placeholder: "email@mail.com" %> 
+
+    <div class="container w-50">
+        <div class="mb-3 row justify-content-center">
+            <%= form.label :"email:", class: "form-label col-1 text-start w-25" %>
+            <div class="col-6">
+                <%= form.text_field :email, class: "form-control col", placeholder: "email@mail.com" %>
+            </div>
         </div>
 
-        <div class="my-3">
-            <%= form.label :password, class: "form-label" %>
-            <%= form.password_field :password, class: "form-control w-25", placeholder: "password" %> 
+        <div class="mb-3 row justify-content-center">
+            <%= form.label :"password:", class: "form-label col-1 text-start w-25" %>
+            <div class="col-6">
+                <%= form.password_field :password, class: "form-control col", placeholder: "Password1948" %>
+            </div>
         </div>
-        
-        <div>
-            <%= form.submit "Log in", class: "btn btn-primary" %>
-        </div>
+    </div>
+    <div>
+        <%= form.submit "Log in", class: "btn btn-primary" %>
     </div>
 <% end %>
