@@ -1,0 +1,29 @@
+<h1 class="py-3">Edit password</h1>
+
+<%= form_with model: Current.user, url: password_path do |form| %>
+    <% if form.object.errors.any? %>
+        <div class="alert alert-danger">
+            <% form.object.errors.full_messages.each do |message| %>
+                <div><%= message %></div>
+            <% end %>
+        </div>
+    <% end %>
+    
+    <div class="container w-50">
+        <div class="mb-3 row justify-content-center">
+            <%= form.label :password, class: "form-label col-1 text-start w-25" %>
+            <div class="col-6">
+                <%= form.password_field :password, class: "form-control col", placeholder: "password" %>
+            </div>
+        </div>
+        <div class="mb-3 row justify-content-center">
+            <%= form.label :password_confirmation, class: "form-label col-1 text-start w-25" %>
+            <div class="col-6">
+                <%= form.password_field :password_confirmation, class: "form-control col", placeholder: "password" %>
+            </div>
+        </div>
+    </div>
+    <div>
+        <%= form.submit "Update Password", class: "btn btn-primary" %>
+    </div>
+<% end %>
