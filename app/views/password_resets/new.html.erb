@@ -1,0 +1,27 @@
+<h1>Forgot your password?</h1>
+
+<%= form_with url: password_reset_path do |form| %>
+    <div class="container w-50">
+        <div class="my-3 row justify-content-center">
+            <%= form.label :Email, class: "form-label col-1 text-start w-25" %>
+            <div class="col-6">
+                <%= form.text_field :email, class: "form-control col", placeholder: "email@mail.com" %>
+            </div>
+        </div>
+        <div class="mb-3 row justify-content-center">
+            <%= form.label :password, class: "form-label col-1 text-start w-25" %>
+            <div class="col-6">
+                <%= form.password_field :password, class: "form-control col", placeholder: "password" %>
+            </div>
+        </div>
+        <div class="mb-3 row justify-content-center">
+            <%= form.label :password_confirmation, class: "form-label col-1 text-start w-25" %>
+            <div class="col-6">
+                <%= form.password_field :password_confirmation, class: "form-control col", placeholder: "password" %>
+            </div>
+        </div>
+    </div>
+    <div>
+        <%= form.submit "Reset Password", class: "btn btn-primary" %>
+    </div>
+<% end %>

@@ -1,6 +1,8 @@
-# Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-# Defines the root path route ("/")
-# root "articles#index"
+=begin 
+Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+Defines the root path route ("/")
+root "articles#index"
+=end
 
 Rails.application.routes.draw do
   # GET "/about"
@@ -17,6 +19,10 @@ Rails.application.routes.draw do
   # Route to edit password
   get "password", to: "passwords#edit"
   patch "password", to: "passwords#update"
+
+  # Route to reset password
+  get "password/reset", to: "password_resets#new"
+  post "password/reset", to: "password_resets#create"
 
   # Route for session log out
   delete "/logout", to: "session#destroy"
