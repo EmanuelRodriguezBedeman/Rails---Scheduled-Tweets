@@ -5,7 +5,7 @@ root "articles#index"
 =end
 
 Rails.application.routes.draw do
-  # GET "/about"
+  # Route for about-us
   get "/about-us", to: "about#index", as: :about
 
   # Route for registration
@@ -26,6 +26,9 @@ Rails.application.routes.draw do
 
   # Route for session log out
   delete "/logout", to: "session#destroy"
+
+  # Route for Twitter API callback
+  get "/auth/twitter/callback", to: "omniauth_callbacks#twitter"
 
   # Root Route
   root "main#index"
