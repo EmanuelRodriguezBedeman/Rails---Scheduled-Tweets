@@ -15,7 +15,7 @@
 
   <body>
     <%= render partial: "shared/navbar" %>
-    <div class="container text-center">
+    <div class="container text-center my-5">
         <% flash.each do |name, msg| -%>
             <%= content_tag :div, msg, class: "alert alert-primary" %>
         <% end -%>

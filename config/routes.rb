@@ -30,6 +30,9 @@ Rails.application.routes.draw do
   # Route for Twitter API callback
   get "/auth/twitter/callback", to: "omniauth_callbacks#twitter"
 
+  # To create the CRUD Routes
+  resources :twitter_accounts
+
   # Root Route
   root "main#index"
 end
