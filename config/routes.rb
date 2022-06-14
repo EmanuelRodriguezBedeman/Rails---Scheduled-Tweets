@@ -32,9 +32,9 @@ Rails.application.routes.draw do
 
   # To create the CRUD Routes
   resources :twitter_accounts
-
-  #Added something
-  #Added something else
+  # ex:
+  # get "twitter_accounts/:id"
+  # delete "twitter_accounts/:id"
 
   # Root Route
   root "main#index"
