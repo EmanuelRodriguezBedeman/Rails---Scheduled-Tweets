@@ -1,8 +1,6 @@
-=begin 
-Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-Defines the root path route ("/")
-root "articles#index"
-=end
+# Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+# Defines the root path route ("/")
+# root "articles#index"
 
 Rails.application.routes.draw do
   # Route for about-us
@@ -30,11 +28,14 @@ Rails.application.routes.draw do
   # Route for Twitter API callback
   get "/auth/twitter/callback", to: "omniauth_callbacks#twitter"
 
-  # To create the CRUD Routes
+  # To create the CRUD routes for the twitter accounts
   resources :twitter_accounts
   # ex:
   # get "twitter_accounts/:id"
   # delete "twitter_accounts/:id"
+
+  # To create the CRUD routes for the tweets
+  resource :tweets
 
   # Root Route
   root "main#index"

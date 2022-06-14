@@ -15,6 +15,7 @@ check that both match and then, it'll go into bcrypt to hash it  (secure it).
 
 class User < ApplicationRecord
     has_many :twitter_accounts
+    has_many :tweets
 
     has_secure_password
 
