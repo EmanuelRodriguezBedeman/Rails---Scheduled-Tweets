@@ -35,7 +35,7 @@ Rails.application.routes.draw do
   # delete "twitter_accounts/:id"
 
   # To create the CRUD routes for the tweets
-  resource :tweets
+  resources :tweets
 
   # Root Route
   root "main#index"

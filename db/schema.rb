@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_14_211029) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_14_232932) do
   create_table "tweets", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "twitter_account_id", null: false
