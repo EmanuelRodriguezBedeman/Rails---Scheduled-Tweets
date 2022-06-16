@@ -1,13 +1,7 @@
 <h1 class="py-3">Edit password</h1>
 
 <%= form_with model: Current.user, url: password_path do |form| %>
-    <% if form.object.errors.any? %>
-        <div class="alert alert-danger">
-            <% form.object.errors.full_messages.each do |message| %>
-                <div><%= message %></div>
-            <% end %>
-        </div>
-    <% end %>
+    <%= render "shared/form_errors", form: form %>
     
     <div class="container w-50">
         <div class="mb-3 row justify-content-center">

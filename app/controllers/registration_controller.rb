@@ -9,7 +9,7 @@ class RegistrationController < ApplicationController
             session[:user_id] = @user.id # To save the session and keep the user logged in
             redirect_to root_path, notice: "Succesfully created account"
         else
-            render :new, status: :unprocessable_entity
+            render :new
         end
     end
 
