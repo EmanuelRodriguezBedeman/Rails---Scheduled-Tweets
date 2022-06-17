@@ -13,4 +13,16 @@ class Tweet < ApplicationRecord
   after_initialize do
     self.publish_at ||= 1.hour.from_now
   end
+
+  # To determine if the tweet was published or not.
+  def published?
+    # Checks if there is a tweet id saved, returns true or false
+    tweet_id? 
+  end
+
+  def publish_to_twitter!
+    tweet = twitter_account.client.update(body)
+    update(tweet_id: tweet.id)
+  end
+    
 end
