@@ -1,4 +1,4 @@
-<%= form_with model: tweet, data: { turbo: false }, local: true do |form| %>
+<%= form_with model: tweet, data: { turbo: true }, local: true do |form| %>
     <%= render "shared/form_errors", form: form %>
 
     <div class="mb-3">
@@ -21,6 +21,6 @@
     <%= form.button "Schedule", class: "btn btn-primary" %>
     
     <% if form.object.persisted? %>
-        <%= button_to "Detele", form.object, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-outline-danger" %>
+        <%= link_to "Delete", form.object, data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'}, class: "btn btn-outline-danger" %>
     <% end %>
 <% end %>

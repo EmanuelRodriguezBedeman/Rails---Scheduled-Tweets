@@ -32,16 +32,15 @@ class TweetsController < ApplicationController
     end
 
     def destroy
-        tweet.destroy
-        redirect_to tweets_path, notice: "Tweet was unscheduled"
+        @tweet.destroy
+        redirect_to tweets_path, status: :see_other
     end
-    
     
     private
     
     def tweet_params
         params.require(:tweet).permit(:twitter_account_id, :body, :publish_at)
-    end 
+    end
     
     def set_tweet
         @tweet = Current.user.tweets.find(params[:id])

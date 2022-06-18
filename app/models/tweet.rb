@@ -14,6 +14,12 @@ class Tweet < ApplicationRecord
     self.publish_at ||= 1.hour.from_now
   end
 
+  after_save_commit do
+    if publish_at_previously_changed?
+        TweetJob.set(wait_until: publish_at).perform_later(self)
+    end
+  end
+
   # To determine if the tweet was published or not.
   def published?
     # Checks if there is a tweet id saved, returns true or false
@@ -24,5 +30,4 @@ class Tweet < ApplicationRecord
     tweet = twitter_account.client.update(body)
     update(tweet_id: tweet.id)
   end
-    
 end
