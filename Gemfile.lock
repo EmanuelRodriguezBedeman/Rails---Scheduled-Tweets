@@ -115,7 +115,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
-    importmap-rails (1.1.0)
+    importmap-rails (1.1.1)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
     io-console (0.5.11)
@@ -283,10 +283,12 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  minitest (~> 5.16)
   omniauth-rails_csrf_protection (~> 1.0)
   omniauth-twitter (~> 1.4)
   puma (~> 5.0)
   rails (~> 7.0.3)
+  rails-html-sanitizer (~> 1.4)
   selenium-webdriver
   sidekiq (~> 6.5)
   sprockets-rails
@@ -297,6 +299,7 @@ DEPENDENCIES
   tzinfo-data
   web-console
   webdrivers
+  zeitwerk (~> 2.6)
 
 RUBY VERSION
    ruby 3.1.2p20

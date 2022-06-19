@@ -77,3 +77,9 @@ gem "omniauth-rails_csrf_protection", "~> 1.0"
 gem "twitter", "~> 7.0"
 
 gem "sidekiq", "~> 6.5"
+
+gem "rails-html-sanitizer", "~> 1.4"
+
+gem "zeitwerk", "~> 2.6"
+
+gem "minitest", "~> 5.16"
