@@ -283,7 +283,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
-  minitest (~> 5.16)
+  minitest (~> 5.7)
   omniauth-rails_csrf_protection (~> 1.0)
   omniauth-twitter (~> 1.4)
   puma (~> 5.0)
