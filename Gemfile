@@ -83,3 +83,5 @@ gem "rails-html-sanitizer", "~> 1.4"
 gem "zeitwerk", "~> 2.6"
 
 gem "minitest", "~> 5.7"
+
+gem 'redis'
