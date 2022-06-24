@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+
+  ruby_dev:
+    build: .
+    container_name: ror-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/home/app
+    environment:
+      REDIS_URL: redis://redis-server:6379
+    depends_on:
+      - redis-server
+
+  redis-server:
+    image: redis
+    container_name: redis-server
+    restart: always
+    ports:
+      - "6379:6379"
+    command: redis-server
+    volumes: 
+      - cache:/data
+
+volumes:
+  cache:
+    driver: local
