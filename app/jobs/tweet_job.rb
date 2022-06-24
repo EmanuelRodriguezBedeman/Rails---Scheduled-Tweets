@@ -3,7 +3,7 @@ class TweetJob < ApplicationJob
 
   def perform(tweet)
     # Checks if the tweet is already published
-    return if tweet.publish?
+    return if tweet.published?
 
     # Checks if the time to publish the tweet has not expired yet
     return if tweet.publish_at > Time.current
