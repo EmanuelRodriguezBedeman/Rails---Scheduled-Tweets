@@ -3,27 +3,27 @@
 <%= form_with model: Current.user, url: password_path do |form| %>
     <%= render "shared/form_errors", form: form %>
 
-    <div class="container w-50 card px-0">
-        <div class="card-header">
-            <h1 class="px-0">Edit password</h1>
-        </div>
-        <div class="card-body px-0">
-            <div class="my-4 row justify-content-center">
-                <%= form.label :password, class: "form-label col-3 text-start my-2" %>
-                <div class="col-6">
-                    <%= form.password_field :password, class: "form-control col", placeholder: "password" %>
+        <div class="container card w-50 px-0">
+            <div class="card-header">
+                <h1 class="px-0">Edit password</h1>
+            </div>
+            <div class="card-body px-0">
+                <h5 class="card-title">Please fill the fields below to change your password:</h5>
+                <div class="my-4 row justify-content-center">
+                    <%= form.label :password, class: "form-label col-3 text-start my-2" %>
+                    <div class="col-8">
+                        <%= form.password_field :password, class: "form-control col", placeholder: "password" %>
+                    </div>
+                </div>
+                <div class="my-4 row justify-content-center">
+                    <%= form.label :new_password, class: "form-label col-3 text-start my-2" %>
+                    <div class="col-8">
+                        <%= form.password_field :new_password, class: "form-control col", placeholder: "password" %>
+                    </div>
+                </div>
+                <div>
+                    <%= form.submit "Update Password", class: "btn btn-primary" %>
                 </div>
             </div>
-            <div class="my-4 row justify-content-center">
-                <%= form.label :repeat_password, class: "form-label col-3 text-start my-2" %>
-                <div class="col-6">
-                    <%= form.password_field :repeat_password, class: "form-control col", placeholder: "password" %>
-                </div>
-            </div>
-            <div>
-                <%= form.submit "Update Password", class: "btn btn-primary my-2" %>
-            </div>
         </div>
-    </div>
-
 <% end %>
