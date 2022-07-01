@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   post "/log-in", to: "session#create"
 
   # Route to edit password
-  get "password", to: "passwords#edit"
+  get "password", to: "passwords#edit", as: :edit_password
   patch "password", to: "passwords#update"
 
   # Route to reset password

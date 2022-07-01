@@ -1,6 +1,4 @@
-<!-- <h1 class="py-3">Edit password</h1> -->
-
-<%= form_with model: Current.user, url: password_path do |form| %>
+<%= form_with model: Current.user, url: edit_password_path do |form| %>
     <%= render "shared/form_errors", form: form %>
 
         <div class="container card w-50 px-0">
@@ -16,9 +14,9 @@
                     </div>
                 </div>
                 <div class="my-4 row justify-content-center">
-                    <%= form.label :new_password, class: "form-label col-3 text-start my-2" %>
+                    <%= form.label :repeat_password, class: "form-label col-3 text-start my-2" %>
                     <div class="col-8">
-                        <%= form.password_field :new_password, class: "form-control col", placeholder: "password" %>
+                        <%= form.password_field :repeat_password, class: "form-control col", placeholder: "password" %>
                     </div>
                 </div>
                 <div>
