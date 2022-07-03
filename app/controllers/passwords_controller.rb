@@ -2,11 +2,17 @@
 
 class PasswordsController < ApplicationController
     before_action :require_user_logged_in!
+    before_action :password_params, only: [:update]
 
     def edit
     end
 
     def update
+
+        puts("Hello from update!")
+
+        puts("The params are: #{password_params}")
+
         if Current.user.update(password_params)
             redirect_to root_path, notice: "Password updated!"
         else
@@ -17,6 +23,11 @@ class PasswordsController < ApplicationController
     private 
 
     def password_params
-        params.require.(:user).permit(:password, :repeat_password)
+        puts("Hello from password_params!")
+
+        puts params.inspect
+
+        puts "End of params inspect"
+        params.require.(:user).permit(:password, :password_confirmation)
     end
 end
