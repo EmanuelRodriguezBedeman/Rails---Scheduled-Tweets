@@ -11,8 +11,6 @@ class PasswordsController < ApplicationController
 
         puts("Hello from update!")
 
-        puts("The params are: #{password_params}")
-
         if Current.user.update(password_params)
             redirect_to root_path, notice: "Password updated!"
         else
@@ -20,14 +18,18 @@ class PasswordsController < ApplicationController
         end
     end
 
-    private 
+    private
 
     def password_params
         puts("Hello from password_params!")
 
+        puts params
+        
+        puts("\n↓↓ Start of params inspect ↓↓ \n\n")
+        
         puts params.inspect
 
-        puts "End of params inspect"
-        params.require.(:user).permit(:password, :password_confirmation)
+        puts("\n↑↑ End of params inspect ↑↑ \n\n")
+        params.permit(user: [:password, :repeat_password])
     end
 end
