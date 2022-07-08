@@ -1,18 +1,12 @@
 <%= form_with model: @user, url: sign_up_path, data: { turbo: false }, local: true do |form| %>
 
-    <% if form.object.errors.any? %>
-        <div class="alert alert-danger">
-            <% form.object.errors.full_messages.each do |message| %>
-                <div><%= message %></div>
-            <% end %>
-        </div>
-    <% end %>
+    <%= render "shared/form_errors", form: form %>
 
     <div class="container card w-50 px-0">
-    <div class="card-header">
-        <h1 class="px-0">Sign-up to Schedule Tweets!</h1>
-    </div>
-    <div class="card-body px-0">
+        <div class="card-header">
+            <h1 class="px-0">Sign-up to Schedule Tweets!</h1>
+        </div>
+        <div class="card-body px-0">
             <h5 class="card-title">Please fill the fields below to create your account:</h5>
             <div class="my-4 row justify-content-center">
                 <%= form.label :Email, class: "form-label col-3 text-start my-2" %>
