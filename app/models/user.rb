@@ -21,4 +21,5 @@ class User < ApplicationRecord
 
     # Makes sure that the email field is not empty and is valid:
     validates :email, presence: true, format: { with: /\A[^@\s]+@[^@\s]+\z/, message: "Must be a valid email address"}
+    validates :password, presence: true
 end
