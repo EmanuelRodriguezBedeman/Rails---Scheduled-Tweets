@@ -9,21 +9,21 @@
         <div class="card-body w-100 mx-auto">
             <h5 class="card-title">Fill the fields below to create your account:</h5>
             <div class="my-4 row">
-                <%= form.label :"Email:", class: "form-label col-3 text-start" %>
+                <%= form.label :email, class: "form-label col-3 text-start" %>
                 <div class="col">
-                    <%= form.text_field :"Email:", class: "form-control", placeholder: "password" %>
+                    <%= form.text_field :email, class: "form-control", placeholder: "email@email.com" %>
                 </div>
             </div>
             <div class="my-4 row">
-                <%= form.label :"password:", class: "form-label col-3 text-start" %>
+                <%= form.label :password, class: "form-label col-3 text-start" %>
                 <div class="col">
-                    <%= form.password_field :"password:", class: "form-control", placeholder: "password" %>
+                    <%= form.password_field :password, class: "form-control", placeholder: "password" %>
                 </div>
             </div>
             <div class="mt-4 mb-3 row">
-                <%= form.label :"Repeat Password:", class: "form-label col-3 text-start" %>
+                <%= form.label :password_confirmation, class: "form-label col-3 text-start" %>
                 <div class="col">
-                    <%= form.password_field :"Repeat Password:", class: "form-control", placeholder: "password" %>
+                    <%= form.password_field :password_confirmation, class: "form-control", placeholder: "password" %>
                 </div>
             </div>
             <div>
