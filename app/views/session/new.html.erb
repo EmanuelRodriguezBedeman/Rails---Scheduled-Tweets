@@ -1,24 +1,26 @@
-<h1 class="py-3">Log-in to Schedule Tweets!</h1>
-
 <%= form_with url: log_in_path do |form| %>
-
-    <div class="container w-50">
-        <div class="mb-3 row justify-content-center">
-            <%= form.label :"email:", class: "form-label col-1 text-start w-25" %>
-            <div class="col-6">
-                <%= form.text_field :email, class: "form-control col", placeholder: "email@mail.com" %>
-            </div>
+    <div class="container card w-25 px-0 text-center">
+        <div class="card-header">
+            <h2>Log-in to Schedule Tweets!</h2>
         </div>
-
-        <div class="mb-3 row justify-content-center">
-            <%= form.label :password, class: "form-label col-1 text-start w-25" %>
-            <div class="col-6">
-                <%= form.password_field :password, class: "form-control col", placeholder: "password" %>
-                <%= link_to "Forgot your password?", password_reset_path %>
+        <div class="card-body w-100 mx-auto">
+            <h5 class="card-title">Enter your account:</h5>
+            <div class="my-3 row">                
+                <%= form.label :"email:", class: "form-label col-3 text-start my-auto" %>
+                <div class="col">
+                    <%= form.text_field :email, class: "form-control", placeholder: "email@mail.com" %>
+                </div>
             </div>
-        </div>
-    </div>
-    <div>
-        <%= form.submit "Log in", class: "btn btn-primary" %>
+            <div class="my-4 row">
+                <%= form.label :"Password:", class: "form-label col-3 text-start py-auto my-1" %>
+                <div class="col">
+                    <%= form.password_field :"Password:", class: "form-control", placeholder: "password" %>
+                    <%= link_to "Forgot your password?", password_reset_path, class: "d-flex justify-content-end" %>
+                </div>
+            </div>
+            <div>
+                <%= form.submit "Log in", class: "btn btn-primary w-75" %>
+            </div> 
+        </div>           
     </div>
 <% end %>

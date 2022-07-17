@@ -1,5 +1,5 @@
-<div class="d-flex align-items-center justify-content-center">
+<div class="text-center">
     <h1>Welcome to Scheduled Tweets</h1>
+    
+    <%= button_to "Connect Twitter", "/auth/twitter", data: {turbo: "false"}, method: :post, class:"mt-5 btn btn-primary" %>
 </div>
-
-<%= button_to "Connect Twitter", "/auth/twitter", data: {turbo: "false"}, method: :post, class:"mt-5 btn btn-primary" %>

@@ -2,32 +2,32 @@
 
     <%= render "shared/form_errors", form: form %>
 
-    <div class="container card w-50 px-0">
+    <div class="container card w-25 px-0 text-center">
         <div class="card-header">
-            <h1 class="px-0">Sign-up to Schedule Tweets!</h1>
+            <h2 class="w-100">Sign-up to Schedule Tweets!</h2>
         </div>
-        <div class="card-body px-0 mx-auto">
-            <h5 class="card-title">Please fill the fields below to create your account:</h5>
+        <div class="card-body w-100 mx-auto">
+            <h5 class="card-title">Fill the fields below to create your account:</h5>
             <div class="my-4 row">
-                <%= form.label :Email, class: "form-label col-3 text-start" %>
+                <%= form.label :"Email:", class: "form-label col-3 text-start" %>
                 <div class="col">
-                    <%= form.text_field :email, class: "form-control", placeholder: "password" %>
+                    <%= form.text_field :"Email:", class: "form-control", placeholder: "password" %>
                 </div>
             </div>
             <div class="my-4 row">
-                <%= form.label :password, class: "form-label col-3 text-start" %>
+                <%= form.label :"password:", class: "form-label col-3 text-start" %>
                 <div class="col">
-                    <%= form.password_field :password, class: "form-control", placeholder: "password" %>
+                    <%= form.password_field :"password:", class: "form-control", placeholder: "password" %>
                 </div>
             </div>
             <div class="mt-4 mb-3 row">
-                <%= form.label :password_confirmation, class: "form-label col-3 text-start" %>
+                <%= form.label :"Repeat Password:", class: "form-label col-3 text-start" %>
                 <div class="col">
-                    <%= form.password_field :password_confirmation, class: "form-control", placeholder: "password" %>
+                    <%= form.password_field :"Repeat Password:", class: "form-control", placeholder: "password" %>
                 </div>
             </div>
             <div>
-                <%= form.submit "Submit", class: "btn btn-primary w-75" %>
+                <%= form.submit "Register", class: "btn btn-primary w-75" %>
             </div>
         </div>
     </div>
