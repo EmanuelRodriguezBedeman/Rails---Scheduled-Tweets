@@ -2,32 +2,31 @@
 
     <%= render "shared/form_errors", form: form %>
 
-    <div class="container card w-25 px-0 text-center">
+    <div class="container card px-0 text-center" style="width: 32.5%">
         <div class="card-header">
-            <h2 class="w-100">Sign-up to Schedule Tweets!</h2>
+            <h2>Sign-up to Schedule Tweets!</h2>
         </div>
-        <div class="card-body w-100 mx-auto">
-            <h5 class="card-title">Fill the fields below to create your account:</h5>
-            <div class="my-4 row">
-                <%= form.label :email, "Email:", class: "form-label col-3 text-start" %>
+        <div class="card-body">
+            <div class="my-2 row">
+                <%= form.label :email, "Email:", class: "form-label col-3 text-start my-1" %>
                 <div class="col">
                     <%= form.text_field :email, class: "form-control", placeholder: "email@email.com" %>
                 </div>
             </div>
             <div class="my-4 row">
-                <%= form.label :password, "Password:", class: "form-label col-3 text-start" %>
+                <%= form.label :password, "Password:", class: "form-label col-3 text-start my-1" %>
                 <div class="col">
                     <%= form.password_field :password, class: "form-control", placeholder: "password" %>
                 </div>
             </div>
-            <div class="mt-4 mb-3 row">
-                <%= form.label :password_confirmation, "Repeat password:", class: "form-label col-3 text-start" %>
+            <div class="my-4 row">
+                <%= form.label :password_confirmation, "Repeat password:", class: "form-label col-3 text-start my-1" %>
                 <div class="col">
                     <%= form.password_field :password_confirmation, class: "form-control", placeholder: "password" %>
                 </div>
             </div>
-            <div>
-                <%= form.submit "Register", class: "btn btn-primary w-75" %>
+            <div class="d-grid gap-2">
+                <%= form.submit "Register", class: "btn btn-primary" %>
             </div>
         </div>
     </div>

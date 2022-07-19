@@ -1,13 +1,15 @@
-<div class="d-flex justify-content-between align-items-center">
-    <h1>Tweets</h1>
-
-    <% if Current.user.twitter_accounts.any? %>
-        <%= link_to "Schedule a tweet", new_tweet_path, class: "btn btn-primary" %>
+<div class="container">
+    <div class="d-flex justify-content-start align-items-center py-3">
+        <h1 class="me-3">Tweets</h1>
+    
+        <% if Current.user.twitter_accounts.any? %>
+            <%= link_to "Schedule a tweet", new_tweet_path, class: "btn btn-primary" %>
+        <% end %>
+    </div>
+    
+    <% if Current.user.twitter_accounts.none? %>
+        <%= button_to "Connect Twitter", "/auth/twitter", data: {turbo: "false"}, method: :post, class:"btn btn-primary mt-5" %>
     <% end %>
+    
+    <%= render @tweets %>
 </div>
-
-<% if Current.user.twitter_accounts.none? %>
-    <%= button_to "Connect Twitter", "/auth/twitter", data: {turbo: "false"}, method: :post, class:"mt-5 btn btn-primary" %>
-<% end %>
-
-<%= render @tweets %>

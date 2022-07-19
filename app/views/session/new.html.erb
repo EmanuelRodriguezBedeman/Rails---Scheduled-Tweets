@@ -4,7 +4,6 @@
             <h2>Log-in to Schedule Tweets!</h2>
         </div>
         <div class="card-body w-100 mx-auto">
-            <h5 class="card-title">Enter your account:</h5>
             <div class="my-3 row">                
                 <%= form.label :email, "Email:", class: "form-label col-3 text-start my-auto" %>
                 <div class="col">
@@ -18,8 +17,8 @@
                     <%= link_to "Forgot your password?", password_reset_path, class: "d-flex justify-content-end" %>
                 </div>
             </div>
-            <div>
-                <%= form.submit "Log in", class: "btn btn-primary w-75" %>
+            <div class="d-grid gap-2">
+                <%= form.submit "Log in", class: "btn btn-primary" %>
             </div> 
         </div>           
     </div>
