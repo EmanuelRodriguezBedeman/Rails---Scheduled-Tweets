@@ -27,10 +27,14 @@
     background-color: #1363DF !important;
  }
 
- li a, .navbar-brand, .footer, .bi-twitter, .vr {
+ li a, .navbar-brand, .footer, .bi-twitter, .vr, li .btn {
     color: #F5F8FA !important;
  }
 
  .border-dark {
     border-color: #14171A !important;
+ }
+
+ .custom {
+    height: 42px !important;
  }
