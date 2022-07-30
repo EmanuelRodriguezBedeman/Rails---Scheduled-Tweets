@@ -23,11 +23,11 @@
     text-align: center;
  }
 
- .btn, .navbar {
+ .btn-primary, .navbar {
     background-color: #1363DF !important;
  }
 
- li a, .navbar-brand, .footer, .bi-twitter, .vr, li .btn {
+ li a, .navbar-brand, .footer, .bi-twitter, .vr, li .btn-primary {
     color: #F5F8FA !important;
  }
 
@@ -36,5 +36,9 @@
  }
 
  .custom {
-    height: 42px !important;
+    height: 2.625rem !important;
+ }
+
+ .card {
+    border-color: #AAB8C2 !important;
  }
