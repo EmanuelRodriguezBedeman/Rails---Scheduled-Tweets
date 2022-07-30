@@ -2,6 +2,7 @@
     <div class="container-fluid">
         <i class="bi bi-twitter px-0 mx-0"></i>
         <%= link_to "Tweets", tweets_path, class:"navbar-brand"%>
+        <div class="vr"></div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -12,9 +13,11 @@
                     <li class= "nav-item">
                         <%= link_to "Home", root_path, class:"nav-link"%>
                     </li>
+                    <div class="vr"></div>
                     <li class= "nav-item">
                         <%= link_to "About", about_path, class:"nav-link"%>
                     </li>
+                    <div class="vr"></div>
                     <li class= "nav-item">
                         <%= link_to "Twitter Accounts", twitter_accounts_path, class:"nav-link"%>
                     </li>
@@ -26,6 +29,7 @@
             <li class="nav-item">
                 <%= link_to "Edit Password", password_path, class:"nav-link"%>
             </li>
+            <div class="vr"></div>
             <li class="nav-item">
                 <%= button_to "Logout", logout_path, method: :delete, class:"btn btn-light" %>
             </li>
@@ -33,6 +37,7 @@
             <li class="nav-item">
                 <%= link_to "Sign up", sign_up_path, class:"nav-link"%>
             </li>
+            <div class="vr"></div>
             <li class="nav-item">
                 <%= link_to "Log in", log_in_path, class:"nav-link"%>
             </li>
