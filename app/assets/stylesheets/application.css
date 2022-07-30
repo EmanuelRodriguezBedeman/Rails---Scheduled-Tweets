@@ -14,7 +14,6 @@
  *= require_self
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
  .footer {
     position: fixed;
@@ -34,8 +33,4 @@
 
  .border-dark {
     border-color: #14171A !important;
- }
-
- body {
-    font-family: 'Roboto', "light-300" !important;
  }
