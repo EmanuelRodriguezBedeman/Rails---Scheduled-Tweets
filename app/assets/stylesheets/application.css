@@ -29,3 +29,7 @@
  li a, .navbar-brand, .footer, .bi-twitter, .vr {
     color: #F5F8FA !important;
  }
+
+ .border-dark {
+    border-color: #14171A !important;
+ }
