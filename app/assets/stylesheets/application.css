@@ -14,16 +14,20 @@
  *= require_self
  */
 
+ #footerText {
+    color: #F5F8FA;
+ }
+
+ #twitterIcon {
+    color: #1363DF !important;
+ }
+
  .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
- }
-
- #twitterIcon {
-    color: #1363DF !important;
  }
 
  .btn-primary, .navbar {
