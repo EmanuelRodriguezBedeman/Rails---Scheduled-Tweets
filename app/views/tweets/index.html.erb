@@ -1,6 +1,9 @@
 <div class="container">
     <div class="d-flex justify-content-between align-items-center py-3">
-        <h1 class="me-3">Tweets</h1>
+        <h1 class="border-bottom border-2 border-opacity-25 border-primary fst-italic me-3">
+            Tweets
+            <i id="twitterIcon" class="bi bi-twitter"></i>
+        </h1>
     
         <% if Current.user.twitter_accounts.any? %>
             <%= link_to "Schedule a tweet", new_tweet_path, class: "btn btn-primary" %>
