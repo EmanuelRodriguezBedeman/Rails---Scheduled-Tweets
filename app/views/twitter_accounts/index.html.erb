@@ -10,7 +10,7 @@
         <div class="card card-body">
             <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    <%= image_tag twitter_account.image, class: "rounded-circle" %> 
+                    <%= image_tag twitter_account.image, class: "rounded-circle border border-2  p-1" %>
                     <%= link_to "@#{twitter_account.username}", "https://twitter.com/#{twitter_account.username}", target: :_blank %>
                 </div>
                 <%= button_to "Disconnect", twitter_account, method: :delete, form: { data: { turbo_confirm: 'Are you sure?' } }, class:"btn btn-outline-danger mx-0" %>
