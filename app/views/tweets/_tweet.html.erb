@@ -1,7 +1,7 @@
 <div class="mb-3 card card-body">
     <%= tweet.body %>
     <div class="me-4">
-        <%= image_tag tweet.twitter_account.image, class: "rounded-circle" %> 
+        <%= image_tag tweet.twitter_account.image, class: "rounded-circle border border-2  p-1" %> 
         <%= link_to "@#{tweet.twitter_account.username}", "https://twitter.com/#{tweet.twitter_account.username}", target: :_blank %>
 
         <% if tweet.published? %>
