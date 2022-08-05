@@ -1,7 +1,7 @@
 <div class="mb-3 card card-body">
     <div class="d-flex align-items-center">
         <div>
-            <%= image_tag tweet.twitter_account.image, class: "rounded-circle border border-2 border-info p-1 border-opacity-25" %>
+            <%= image_tag tweet.twitter_account.image, class: "rounded-circle border border-2 border-primary p-1 border-opacity-50" %>
         </div>
         <div class="d-flex align-items-start flex-column ms-2">
             <%= link_to "@#{tweet.twitter_account.username}:", "https://twitter.com/#{tweet.twitter_account.username}", target: :_blank, id: "customAnchor" %>

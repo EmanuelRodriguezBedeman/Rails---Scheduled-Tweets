@@ -10,7 +10,7 @@
         <div class="card card-body">
             <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    <%= image_tag twitter_account.image, class: "rounded-circle border border-info border-2  p-1 border-opacity-50" %>
+                    <%= image_tag twitter_account.image, class: "rounded-circle border border-primary border-2  p-1 border-opacity-50" %>
                     <%= link_to "@#{twitter_account.username}", "https://twitter.com/#{twitter_account.username}", target: :_blank, id: "customAnchor" %>
                 </div>
                 <%= button_to "Disconnect", twitter_account, method: :delete, form: { data: { turbo_confirm: 'Are you sure?' } }, class:"btn btn-outline-danger mx-0" %>
