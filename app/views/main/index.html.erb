@@ -1,8 +1,38 @@
-<div class="text-center">
-    <h1>
-        Welcome to Scheduled Tweets ! 
-        <i id="twitterIcon" class="bi bi-twitter"><i class="bi bi-pencil fs-3"></i></i>
-    </h1>
-    
-    <%= button_to "Connect Twitter", "/auth/twitter", data: {turbo: "false"}, method: :post, class:"mt-5 btn btn-primary" %>
+<div class="container mx-auto my-5">
+    <div class="row my-5">
+        <h1 class="text-center">
+            Welcome to Scheduled Tweets ! 
+            <i id="twitterIcon" class="bi bi-twitter"><i class="bi bi-pencil fs-3"></i></i>
+        </h1>
+    </div>
+    <div class="row my-5">
+        <div class="row">
+            <div class="col-2 mx-auto">
+                <%= image_tag "mind.png", class:"img-fluid" %>.
+                <h2 class="text-center">You have a tweet in mind?</h2>
+                <p class="text-center">Write it down!</p>
+            </div>
+            <div class="col-2 mx-auto">
+                <%= image_tag "clock.png", class:"img-fluid" %>.
+                <h2 class="text-center">Tired of watching the clock?</h2>
+                <p class="text-center">Just set the time to post it!</p>
+            </div>
+            <div class="col-2 mx-auto">
+                <%= image_tag "tweet.png", id:"postImage", class:"img-fluid" %>.
+                <h2 class="text-center">Watch your tweets posting!</h2>
+                <p class="text-center">Completely  by themselves!</p>
+            </div>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="row">
+            <h2 class="text-center">Just create an account!</h2>
+        </div>
+        <div class="row my-3">
+            <i class="bi bi-arrow-down fs-1 text-center"></i>
+        </div>
+        <div class="row text-center">
+            <%= button_to "Connect Twitter", "/auth/twitter", data: {turbo: "false"}, method: :post, id:"connectButton", class:"btn btn-primary btn-lg" %>
+        </div>
+    </div>
 </div>

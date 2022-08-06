@@ -24,8 +24,16 @@
     color: #F5F8FA;
  }
 
+ #postImage {
+    color: red !important;
+ }
+
  #twitterIcon {
     color: #1363DF !important;
+ }
+
+ #connectButton {
+    border-radius: 0;
  }
 
  .footer {
