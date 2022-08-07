@@ -32,8 +32,9 @@
     color: #1363DF !important;
  }
 
- #connectButton {
+ #createButton {
     border-radius: 0;
+    width: 15%;
  }
 
  .footer {
@@ -66,4 +67,8 @@
 
  .card a:hover {
     text-decoration: underline;
+ }
+
+ .home-margin {
+    margin-bottom: 20rem !important;
  }
