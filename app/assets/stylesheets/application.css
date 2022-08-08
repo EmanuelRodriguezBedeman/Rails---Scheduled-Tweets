@@ -30,8 +30,8 @@
     text-decoration: underline;
  }
 
- .customMargin {
-    margin-bottom: 15rem;
+ .hrMargins {
+    margin: 7.5rem auto;
  }
 
  #createButton {
