@@ -1,42 +1,54 @@
-<div class="container my-5">
-    <div class="home-margin my-5">
+<div class="container d-block my-5">
+    <div class="mt-5 customMargin">
         <h1 class="text-center">
             Welcome to Scheduled Tweets ! 
-            <i id="twitterIcon" class="bi bi-twitter"><i class="bi bi-pencil fs-3"></i></i>
+            <i id="twitterIcon" class="bi bi-twitter">
+                <i class="bi bi-pencil fs-3"></i>
+            </i>
         </h1>
     </div>
-    <div class="home-margin d-block my-5 text-center">
-        <div class="">
-            <%= image_tag "mind.png", class:"col-2 d-inline-block" %>
-            <div class="d-inline-block ms-5 my-auto">
-                <h2 class="">You have a tweet in mind?</h2>
-                <p class="">Write it down!</p>
+    
+    <hr>
+
+    <div class="d-flex flex-column w-auto customMargin">
+        <div class="d-flex flex-row w-75 ms-3">
+            <%= image_tag "mind.png", class:"col-2" %>
+            <div class="text-start ms-5">
+                <h3 class="align-middle">You have a tweet in mind?</h3>
+                <p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices vitae auctor eu augue.</p>
             </div>
         </div>
-        <div class="my-5">
-            <div class="d-inline-block me-5">
-                <h2 class="">Tired of watching the clock?</h2>
-                <p class="">Just set the time to post it!</p>
+
+        <div class="d-flex justify-content-end my-5">
+            <div class="d-flex flex-row-reverse w-75 me-1">
+                <%= image_tag "clock.png", class:"col-2" %>
+                <div class="text-start me-5">
+                    <h3 class="align-middle">Tired of watching the clock?</h3>
+                    <p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices vitae auctor eu augue.</p>
+                </div>
             </div>
-            <%= image_tag "clock.png", class:"d-inline-block col-2" %>
         </div>
-        <div class="">
-            <%= image_tag "tweet.png", id:"postImage", class:"d-inline-block col-2" %>
-            <div class="d-inline-block ms-5">
-                <h2 class="">Watch your tweets posting!</h2>
-                <p class="">Completely  by themselves!</p>
+
+        <div class="d-flex flex-row w-75 ms-3">
+            <%= image_tag "tweet.png", class:"col-2" %>
+            <div class="text-start ms-5">
+                <h3 class="align-middle">Watch your tweets posting!</h3>
+                <p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices vitae auctor eu augue.</p>
             </div>
         </div>
     </div>
-    <div class="home-margin text-center mx-auto mt-5 pb-5">
-        <div>
-            <h2 class="mb-0">Just sign up to start !</h2>
+
+    <hr>
+
+    <div class="text-center my-5 pb-5">
+        <div class="mb-0">
+            <h2>Just sign up to start !</h2>
         </div>
         <div class="my-3">
             <i class="bi bi-arrow-down fs-1"></i>
         </div>
         <div>
-            <%= link_to "Create Account", sign_up_path, id:"createButton", class:"btn btn-primary" %>
+            <%= link_to "Create an Account", sign_up_path, id:"createButton", class:"btn btn-primary" %>
         </div>
     </div>
 </div>
