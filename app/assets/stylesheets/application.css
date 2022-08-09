@@ -1,3 +1,7 @@
+ hr {
+    margin: 8rem auto;
+ }
+ 
  .footer {
     position: fixed;
     left: 0;
@@ -28,10 +32,6 @@
 
  .card a:hover {
     text-decoration: underline;
- }
-
- .hrMargins {
-    margin: 7.5rem auto;
  }
 
  #createButton {
