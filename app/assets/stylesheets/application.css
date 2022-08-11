@@ -1,5 +1,29 @@
  hr {
-    margin: 8rem auto;
+    margin: 7rem auto;
+ }
+
+ .border-dark {
+    border-color: #14171A !important;
+ }
+
+ .btn-primary, .navbar {
+    background-color: #1363DF !important;
+ }
+
+ .card {
+    border-color: #AAB8C2 !important;
+ }
+
+ .card a:hover {
+    text-decoration: underline;
+ }
+ 
+ .custom {
+    height: 2.625rem !important;
+ }
+
+ .featureText {
+    line-height: 1;
  }
  
  .footer {
@@ -10,30 +34,11 @@
     text-align: center;
  }
 
- .btn-primary, .navbar {
-    background-color: #1363DF !important;
- }
-
  li a, .navbar-brand, .footer, .bi-twitter, .vr, li .btn-primary {
     color: #F5F8FA !important;
  }
 
- .border-dark {
-    border-color: #14171A !important;
- }
-
- .custom {
-    height: 2.625rem !important;
- }
-
- .card {
-    border-color: #AAB8C2 !important;
- }
-
- .card a:hover {
-    text-decoration: underline;
- }
-
+ 
  #createButton {
     border-radius: 0;
     width: 15%;
