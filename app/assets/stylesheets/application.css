@@ -1,5 +1,14 @@
+
+ body {
+    background-color: #f5f8fa;
+background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
+ }
+
  hr {
+    border-style: none;
+    border-top-style: dotted;
     margin: 7rem auto;
+    width: 25%;
  }
 
  .border-dark {
@@ -18,7 +27,7 @@
     text-decoration: underline;
  }
  
- .custom {
+ .customBorder {
     height: 2.625rem !important;
  }
  
