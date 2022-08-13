@@ -5,6 +5,7 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
  }
 
  hr {
+    border-color: #14171A;
     border-style: none;
     border-top-style: dotted;
     border-width: 0.5rem;
@@ -18,6 +19,10 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
 
  .btn-primary, .navbar {
     background-color: #1363DF !important;
+ }
+
+ .bi-pencil {
+    color: #47B5FF;
  }
 
  .card {
@@ -38,15 +43,6 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
     bottom: 0;
     width: 100%;
     text-align: center;
- }
-
- .gradient-color {
-    background: linear-gradient(
-        -180deg,
-        #705CF2,
-        #6379F2,
-        #3299D9
-    ) !important;
  }
 
  li a, .navbar-brand, .footer, .bi-twitter, .vr, li .btn-primary {
@@ -70,5 +66,5 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
  }
 
  #twitterIcon {
-    color: #1363DF !important;
+    color: #47B5FF !important;
  }
