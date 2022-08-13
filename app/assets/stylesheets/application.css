@@ -9,7 +9,7 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
     border-style: none;
     border-top-style: dotted;
     border-width: 0.5rem;
-    margin: 7rem auto;
+    margin: 9rem auto;
     width: 30%;
  }
 
@@ -22,6 +22,10 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
  }
 
  .bi-pencil {
+    color: #47B5FF;
+ }
+
+ .bi-twitter {
     color: #47B5FF;
  }
 
@@ -45,11 +49,14 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
     text-align: center;
  }
 
- li a, .navbar-brand, .footer, .bi-twitter, .vr, li .btn-primary {
+ .homeIcons{
+    font-size: 6rem !important;
+ }
+
+ li a, .navbar-brand, .vr, li .btn-primary {
     color: #F5F8FA !important;
  }
 
- 
  #createButton {
     border-radius: 0;
     width: 15%;
@@ -61,10 +68,3 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
     text-decoration: none;
  }
 
- #footerText {
-    color: #F5F8FA;
- }
-
- #twitterIcon {
-    color: #47B5FF !important;
- }
