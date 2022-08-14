@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div>
             <!-- Navbar Title -->
-            <%= link_to tweets_path, class:"navbar-brand me-0" do %>
+            <%= link_to tweets_path, class:"navbar-brand me-0 linkHover" do %>
                 <span class="border-bottom">Tweets</span>
                 <i class="bi bi-twitter text-white mx-2"></i>
             <% end %>
@@ -17,15 +17,15 @@
             <div class="navbar-nav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class= "nav-item">
-                        <%= link_to "Home", root_path, class:"nav-link"%>
+                        <%= link_to "Home", root_path, class:"nav-link linkHover"%>
                     </li>
                     <div class="vr"></div>
                     <li class= "nav-item">
-                        <%= link_to "About", about_path, class:"nav-link"%>
+                        <%= link_to "About", about_path, class:"nav-link linkHover"%>
                     </li>
                     <div class="vr"></div>
                     <li class= "nav-item">
-                        <%= link_to "Twitter Accounts", twitter_accounts_path, class:"nav-link"%>
+                        <%= link_to "Twitter Accounts", twitter_accounts_path, class:"nav-link linkHover"%>
                     </li>
                 </ul>
             </div>
