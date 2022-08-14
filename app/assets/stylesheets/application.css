@@ -35,6 +35,12 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
  .card a:hover {
     text-decoration: underline;
  }
+
+ .customAnchor {
+    color: #14171A;
+    font-weight: 500;
+    text-decoration: none;
+ }
  
  .customBorder {
     height: 2.625rem !important;
@@ -67,13 +73,11 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
     color: #AAB8C2 !important;
  }
 
+ .tweetsCard {
+    background-color: #F5F8FA !important;
+ }
+
  #createButton {
     border-radius: 0;
     width: 15%;
- }
-
- #customAnchor {
-    color: #14171A;
-    font-weight: 500;
-    text-decoration: none;
  }
