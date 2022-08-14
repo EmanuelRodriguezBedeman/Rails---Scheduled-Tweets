@@ -40,6 +40,13 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
  .customBorder {
     height: 2.625rem !important;
  }
+
+ .customHover:hover {
+    background-color: #F5F8FA !important;
+    border-color: #06283D !important;
+    color: #1363DF !important;
+    font-weight: 600;
+ }
  
  .footer {
     position: fixed;
