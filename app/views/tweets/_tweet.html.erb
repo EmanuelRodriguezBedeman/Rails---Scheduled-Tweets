@@ -1,7 +1,7 @@
 <div class="tweetsCard card card-body mb-3">
     <div class="d-flex align-items-center">
         <% if tweet.published? %>
-            <%= image_tag tweet.twitter_account.image, class: "rounded-circle border border-2 border-primary p-1 border-opacity-50 me-3" %> 
+            <%= image_tag tweet.twitter_account.image, class: "rounded-circle border border-2 border-primary p-1 border-opacity-50 me-3" %>
             <div class="d-flex align-items-start flex-column me-3">
                 <%= link_to "@#{tweet.twitter_account.username}:", "https://twitter.com/#{tweet.twitter_account.username}", target: :_blank, class: "customAnchor" %>
                 <div>
@@ -20,7 +20,9 @@
                     <% end %>
                 </div>
             </div>
-            <span><i class="bi bi-arrow-right"></i> Scheduled for <%= l tweet.publish_at, format: :short %>.</span>
+            <span class="ms-auto">
+                Scheduled for <%= l tweet.publish_at, format: :short %>
+            </span>
         <% end %>
     </div>
 </div>
