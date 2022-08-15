@@ -14,5 +14,7 @@
         <%= button_to "Connect Twitter", "/auth/twitter", data: {turbo: "false"}, method: :post, class:"btn btn-primary customHover mt-5" %>
     <% end %>
     
-    <%= render @tweets %>
+    <div class="tweetsContainer">
+        <%= render @tweets %>
+    </div>
 </div>
