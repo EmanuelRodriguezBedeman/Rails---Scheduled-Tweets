@@ -52,6 +52,14 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
     color: #1363DF !important;
     font-weight: 600;
  }
+
+ .customMargin {
+    margin: 10rem 0 10rem;
+ }
+
+ .customPadding {
+    padding-bottom: 10rem;
+ }
  
  .footer {
     position: fixed;

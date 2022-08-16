@@ -19,13 +19,17 @@
 
   <body>
     <%= render partial: "shared/navbar" %>
+
     <div class="container text-center my-5">
         <% flash.each do |name, msg| -%>
             <%= content_tag :div, msg, class: "alert alert-primary" %>
         <% end -%>
     </div>
-    <%= yield %>
-  </body>
 
-  <%= render partial: "shared/footer" %>
+    <div class="customPadding">
+        <%= yield %>
+    </div>
+
+    <%= render partial: "shared/footer" %>
+  </body>
 </html>
