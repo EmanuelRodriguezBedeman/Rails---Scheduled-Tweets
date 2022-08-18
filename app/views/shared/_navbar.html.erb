@@ -1,35 +1,50 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg border-bottom border-dark border-1">
-    <div class="container-fluid">
-        <div>
-            <!-- Navbar Title -->
-            <%= link_to tweets_path, class:"navbar-brand me-0 linkHover" do %>
+<nav class="navbar navbar-expand-lg border-bottom border-dark border-1" role="navigation">
+    <div class="container-fluid" role="navigation">
+
+        <!-- Navbar Title -->
+        <div role="navigation">
+            <%= link_to tweets_path, class:"navbar-brand h1 me-3 linkHover" do %>
                 <span class="border-bottom">Tweets</span>
-                <i class="bi bi-twitter text-white mx-2"></i>
+                <i class="bi bi-twitter text-white ms-1"></i>
             <% end %>
         </div>
+
         <div class="vr"></div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!--  -->
+        <div class="btn-group">
+            <!-- Navbar Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class= "nav-item">
-                        <%= link_to "Home", root_path, class:"nav-link linkHover"%>
-                    </li>
-                    <div class="vr"></div>
-                    <li class= "nav-item">
-                        <%= link_to "About", about_path, class:"nav-link linkHover"%>
-                    </li>
-                    <div class="vr"></div>
-                    <li class= "nav-item">
-                        <%= link_to "Twitter Accounts", twitter_accounts_path, class:"nav-link linkHover"%>
-                    </li>
-                </ul>
-            </div>
+            </button>
+
+            <!-- Navbar Links -->
+            <ul class="dropdown-menu ms-auto mb-2 mb-lg-0" id="navbarNavDropdown">
+                <li class="dropdown-item p-0"><%= link_to "Home", root_path, class:"linkHover"%></li>
+                <li class="dropdown-item p-0"><%= link_to "About", about_path, class:"linkHover"%></li>
+                <li class="dropdown-item p-0"><%= link_to "Twitter Accounts", twitter_accounts_path, class:"linkHover"%></li>
+            </ul>
         </div>
+
+        <!-- Navbar Links -->
+        <div class="nav navbar-nav navbar-left" role="navigation">
+            <ul class="nav navbar-nav navbar-left ms-auto mb-2 mb-lg-0">
+                <li class= "nav-item">
+                    <%= link_to "Home", root_path, class:"nav-link linkHover"%>
+                </li>
+                <div class="vr"></div>
+                <li class= "nav-item">
+                    <%= link_to "About", about_path, class:"nav-link linkHover"%>
+                </li>
+                <div class="vr"></div>
+                <li class= "nav-item">
+                    <%= link_to "Twitter Accounts", twitter_accounts_path, class:"nav-link linkHover"%>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Navbar Session Interactions -->
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <% if Current.user %>
             <li class="nav-item">
