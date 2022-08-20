@@ -3,7 +3,7 @@
     <div class="container-fluid" role="navigation">
 
         <!-- Navbar Title -->
-        <div role="navigation">
+        <div class="navbar-header" role="navigation">
             <%= link_to tweets_path, class:"navbar-brand h1 me-3 linkHover" do %>
                 <span class="border-bottom">Tweets</span>
                 <i class="bi bi-twitter text-white ms-1"></i>
@@ -12,11 +12,12 @@
 
         <div class="vr"></div>
 
-        <!--  -->
+        <!-- Dropdown Navbar Content -->
         <div class="btn-group">
             <!-- Navbar Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Navbar Links -->
@@ -28,21 +29,19 @@
         </div>
 
         <!-- Navbar Links -->
-        <div class="nav navbar-nav navbar-left" role="navigation">
-            <ul class="nav navbar-nav navbar-left ms-auto mb-2 mb-lg-0">
-                <li class= "nav-item">
-                    <%= link_to "Home", root_path, class:"nav-link linkHover"%>
-                </li>
-                <div class="vr"></div>
-                <li class= "nav-item">
-                    <%= link_to "About", about_path, class:"nav-link linkHover"%>
-                </li>
-                <div class="vr"></div>
-                <li class= "nav-item">
-                    <%= link_to "Twitter Accounts", twitter_accounts_path, class:"nav-link linkHover"%>
-                </li>
-            </ul>
-        </div>
+        <ul class="nav navbar-nav navbar-left large-navbar-items">
+            <li class= "" id="home">
+                <%= link_to "Home", root_path, class:"nav-link linkHover"%>
+            </li>
+            <div class="vr"></div>
+            <li class= "" id="about">
+                <%= link_to "About", about_path, class:"nav-link linkHover"%>
+            </li>
+            <div class="vr"></div>
+            <li class= "" id="twitterAccounts">
+                <%= link_to "Twitter Accounts", twitter_accounts_path, class:"nav-link linkHover"%>
+            </li>
+        </ul>
 
         <!-- Navbar Session Interactions -->
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">

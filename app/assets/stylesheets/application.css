@@ -1,4 +1,10 @@
- body {
+@media only screen and (max-width: 991px) {
+    .large-navbar-items {
+        display: none;
+    }
+}
+
+body {
     background-color: #f5f8fa;
 background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
  }
