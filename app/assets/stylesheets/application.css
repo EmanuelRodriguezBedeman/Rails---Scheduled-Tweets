@@ -1,8 +1,8 @@
-@media only screen and (max-width: 991px) {
+/* @media only screen and (max-width: 991px) {
     .large-navbar-items {
         display: none;
     }
-}
+} */
 
 body {
     background-color: #f5f8fa;
@@ -52,7 +52,7 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
     height: 2.625rem !important;
  }
 
- .customHover:hover {
+ .buttonHover:hover {
     background-color: #F5F8FA !important;
     border-color: #06283D !important;
     color: #1363DF !important;
