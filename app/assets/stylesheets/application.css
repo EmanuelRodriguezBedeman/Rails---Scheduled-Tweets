@@ -1,8 +1,8 @@
-/* @media only screen and (max-width: 991px) {
-    .large-navbar-items {
+@media only screen and (max-width: 991px) {
+    .vr {
         display: none;
     }
-} */
+}
 
 body {
     background-color: #f5f8fa;
