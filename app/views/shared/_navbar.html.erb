@@ -32,27 +32,28 @@
                     <%= link_to "Twitter Accounts", twitter_accounts_path, class:"nav-link linkHover"%>
                 </li>
             </ul>
+
+            <!-- Navbar Session Interactions -->
+            <ul class="nav navbar-nav ms-auto">
+                <% if Current.user %>
+                <li class="nav-item">
+                    <%= link_to "Edit Password", password_path, class:"nav-link buttonHover border rounded-pill mx-2" %>
+                </li>
+                <div class="vr"></div>
+                <li class="nav-item">
+                    <%= button_to "Logout", logout_path, method: :delete, class:"btn btn-outline-light customBorder buttonHover rounded-pill mx-2" %>
+                </li>
+                <% else %>
+                <li class="nav-item">
+                    <%= link_to "Sign up", sign_up_path, class:"nav-link buttonHover border rounded-pill mx-2" %>
+                </li>
+                <div class="vr"></div>
+                <li class="nav-item">
+                    <%= link_to "Log in", log_in_path, class:"nav-link buttonHover border rounded-pill mx-2" %>
+                </li>
+                <% end %>
+            </ul>
         </div>
 
-        <!-- Navbar Session Interactions -->
-        <ul class="nav navbar-nav ms-auto">
-            <% if Current.user %>
-            <li class="nav-item">
-                <%= link_to "Edit Password", password_path, class:"nav-link buttonHover border rounded-pill mx-2" %>
-            </li>
-            <div class="vr"></div>
-            <li class="nav-item">
-                <%= button_to "Logout", logout_path, method: :delete, class:"btn btn-outline-light customBorder buttonHover rounded-pill mx-2" %>
-            </li>
-            <% else %>
-            <li class="nav-item">
-                <%= link_to "Sign up", sign_up_path, class:"nav-link buttonHover border rounded-pill mx-2" %>
-            </li>
-            <div class="vr"></div>
-            <li class="nav-item">
-                <%= link_to "Log in", log_in_path, class:"nav-link buttonHover border rounded-pill mx-2" %>
-            </li>
-            <% end %>
-        </ul>
     </div>
 </nav>
