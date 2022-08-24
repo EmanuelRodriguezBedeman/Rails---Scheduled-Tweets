@@ -2,6 +2,10 @@
     .vr {
         display: none;
     }
+
+    .user-session {
+        border-style: none !important;
+    }
 }
 
 body {
@@ -65,11 +69,6 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
 
  .customPadding {
     padding-bottom: 10rem;
- }
-
- .dropdown-item {
-    color: red;
-    background-color: blue;
  }
  
  .footer {
