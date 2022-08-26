@@ -34,7 +34,7 @@
             </ul>
 
             <!-- Navbar Session Interactions -->
-            <ul class="nav navbar-nav ms-auto user-session">
+            <ul class="nav navbar-nav ms-auto">
                 <div class="row text-center">
                     <% if Current.user %>
                         <div class="col">
@@ -46,14 +46,16 @@
                             <li class="nav-item">
                                 <%= button_to "Logout", logout_path, method: :delete, class:"btn btn-outline-light customBorder buttonHover rounded-pill" %>
                             </li>
+                            <div class="vr d-none d-lg-block p-0"></div>
                         </div>
                     <% else %>
-                        <div class="col-6">
+                        <div class="col">
                             <li class="nav-item">
                                 <%= link_to "Sign up", sign_up_path, class:"nav-link buttonHover border rounded-pill" %>
                             </li>
                         </div>
-                        <div class="col-6">
+                        <div class="vr d-none d-lg-block p-0"></div>
+                        <div class="col">
                             <li class="nav-item">
                                 <%= link_to "Log in", log_in_path, class:"nav-link buttonHover border rounded-pill" %>
                             </li>
