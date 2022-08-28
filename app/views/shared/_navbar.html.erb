@@ -35,35 +35,23 @@
 
             <!-- Navbar Session Interactions -->
             <ul class="nav navbar-nav ms-auto">
-                <div class="container text-center">
-                    <div class="row">
-                        <% if Current.user %>
-                            <div class="col">
-                                <li class="nav-item">
-                                    <%= link_to "Edit Password", password_path, class:"nav-link buttonHover border rounded-pill" %>
-                                </li>
-                            </div>
-                            <div class="vr d-none d-lg-block p-0"></div>
-                            <div class="col">
-                                <li class="nav-item">
-                                    <%= button_to "Logout", logout_path, method: :delete, class:"btn btn-outline-light customBorder buttonHover border rounded-pill" %>
-                                </li>
-                            </div>
-                        <% else %>
-                            <div class="col">
-                                <li class="nav-item">
-                                    <%= link_to "Sign up", sign_up_path, class:"nav-link buttonHover border rounded-pill" %>
-                                </li>
-                            </div>
-                            <div class="vr d-none d-lg-block p-0"></div>
-                            <div class="col">
-                                <li class="nav-item">
-                                    <%= link_to "Log in", log_in_path, class:"nav-link buttonHover border rounded-pill" %>
-                                </li>
-                            </div>
-                        <% end %>
-                    </div>
-                </div>
+                <% if Current.user %>
+                    <li class="nav-item">
+                        <%= link_to "Edit Password", password_path, class:"nav-link buttonHover border rounded-pill" %>
+                    </li>
+                    <div class="vr d-none d-lg-block p-0"></div>
+                    <li class="nav-item">
+                        <%= button_to "Logout", logout_path, method: :delete, class:"btn btn-outline-light customBorder buttonHover border rounded-pill" %>
+                    </li>
+                <% else %>
+                    <li class="nav-item">
+                        <%= link_to "Sign up", sign_up_path, class:"nav-link buttonHover border rounded-pill" %>
+                    </li>
+                    <div class="vr d-none d-lg-block mx-2 p-0"></div>
+                    <li class="nav-item">
+                        <%= link_to "Log in", log_in_path, class:"nav-link buttonHover border rounded-pill" %>
+                    </li>
+                <% end %>
             </ul>
         </div>
     </div>
