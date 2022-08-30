@@ -38,6 +38,7 @@
             <ul class="nav navbar-nav ms-auto">
                 <% if Current.user %>
 
+                    <!-- Edit pass and log-out for lg screens -->
                     <div class="d-none d-lg-flex">
                         <li class="nav-item">
                             <%= link_to "Edit Password", password_path, class:"nav-link buttonHover border rounded-pill" %>
@@ -48,6 +49,7 @@
                         </li>
                     </div>
 
+                    <!-- Edit pass and log-out for small screens -->
                     <div class="row d-lg-none mt-3">
                         <div class="col d-lg-none text-center">
                             <li class="nav-item">
@@ -63,6 +65,8 @@
                     </div>
 
                 <% else %>
+
+                    <!-- Sign up and Log in for lg screens -->
                     <div class="d-none d-lg-flex">
                         <li class="nav-item">
                             <%= link_to "Sign up", sign_up_path, class:"nav-link buttonHover border rounded-pill" %>
@@ -72,6 +76,8 @@
                             <%= link_to "Log in", log_in_path, class:"nav-link buttonHover border rounded-pill" %>
                         </li>
                     </div>
+
+                    <!-- Sign up and Log in for small screens -->
                     <div class="row d-lg-none mt-3">
                         <div class="col d-lg-none text-center">
                             <li class="nav-item">
@@ -84,7 +90,9 @@
                             </li>
                         </div>
                     </div>
+
                 <% end %>
+                
             </ul>
         </div>
     </div>
