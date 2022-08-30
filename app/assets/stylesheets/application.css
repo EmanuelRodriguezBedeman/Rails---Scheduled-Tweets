@@ -7,7 +7,7 @@ body {
 background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
  }
 
- hr {
+ .homeRule {
     border-color: #14171A;
     border-style: none;
     border-top-style: dotted;

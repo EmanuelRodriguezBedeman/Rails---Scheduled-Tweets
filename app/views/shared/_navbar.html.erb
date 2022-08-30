@@ -19,6 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <!-- Navbar Links -->
             <ul class="nav navbar-nav navbar-left large-navbar-items">
+                <hr class="d-lg-none border-white my-1 w-25">
                 <div class="vr d-none d-lg-block "></div>
                 <li class= "nav-item" id="home">
                     <%= link_to "Home", root_path, class:"nav-link linkHover"%>
@@ -36,13 +37,31 @@
             <!-- Navbar Session Interactions -->
             <ul class="nav navbar-nav ms-auto">
                 <% if Current.user %>
-                    <li class="nav-item">
-                        <%= link_to "Edit Password", password_path, class:"nav-link buttonHover border rounded-pill" %>
-                    </li>
-                    <div class="vr d-none d-lg-block mx-2 p-0"></div>
-                    <li class="nav-item">
-                        <%= button_to "Logout", logout_path, method: :delete, class:"btn btn-outline-light customBorder buttonHover border rounded-pill" %>
-                    </li>
+
+                    <div class="d-none d-lg-flex">
+                        <li class="nav-item">
+                            <%= link_to "Edit Password", password_path, class:"nav-link buttonHover border rounded-pill" %>
+                        </li>
+                        <div class="vr d-none d-lg-block mx-2 p-0"></div>
+                        <li class="nav-item">
+                            <%= button_to "Logout", logout_path, method: :delete, class:"btn btn-outline-light customBorder buttonHover border rounded-pill" %>
+                        </li>
+                    </div>
+
+                    <div class="row d-lg-none mt-3">
+                        <div class="col d-lg-none text-center">
+                            <li class="nav-item">
+                                <%= link_to "Edit Password", password_path, class:"nav-link buttonHover border rounded-pill" %>
+                            </li>
+                        </div>
+                        <div class="vr d-none d-lg-block mx-2 p-0"></div>
+                        <div class="col d-lg-none text-center">
+                            <li class="nav-item">
+                                <%= button_to "Logout", logout_path, method: :delete, class:"btn btn-outline-light buttonHover border rounded-pill" %>
+                            </li>
+                        </div>
+                    </div>
+
                 <% else %>
                     <div class="d-none d-lg-flex">
                         <li class="nav-item">
