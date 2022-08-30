@@ -44,13 +44,27 @@
                         <%= button_to "Logout", logout_path, method: :delete, class:"btn btn-outline-light customBorder buttonHover border rounded-pill" %>
                     </li>
                 <% else %>
-                    <li class="nav-item">
-                        <%= link_to "Sign up", sign_up_path, class:"nav-link buttonHover border rounded-pill" %>
-                    </li>
-                    <div class="vr d-none d-lg-block mx-2 p-0"></div>
-                    <li class="nav-item">
-                        <%= link_to "Log in", log_in_path, class:"nav-link buttonHover border rounded-pill" %>
-                    </li>
+                    <div class="d-none d-lg-flex">
+                        <li class="nav-item">
+                            <%= link_to "Sign up", sign_up_path, class:"nav-link buttonHover border rounded-pill" %>
+                        </li>
+                        <div class="vr d-none d-lg-block mx-2 p-0"></div>
+                        <li class="nav-item">
+                            <%= link_to "Log in", log_in_path, class:"nav-link buttonHover border rounded-pill" %>
+                        </li>
+                    </div>
+                    <div class="row d-lg-none mt-3">
+                        <div class="col d-lg-none text-center">
+                            <li class="nav-item">
+                                <%= link_to "Sign up", sign_up_path, class:"nav-link buttonHover border rounded-pill" %>
+                            </li>
+                        </div>
+                        <div class="col d-lg-none text-center">
+                            <li class="nav-item">
+                                <%= link_to "Log in", log_in_path, class:"nav-link buttonHover border rounded-pill" %>
+                            </li>
+                        </div>
+                    </div>
                 <% end %>
             </ul>
         </div>
