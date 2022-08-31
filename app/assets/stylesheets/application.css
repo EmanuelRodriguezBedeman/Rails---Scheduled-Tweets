@@ -33,6 +33,13 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
     color: #47B5FF;
  }
 
+ .buttonHover:hover {
+    background-color: #F5F8FA !important;
+    border-color: #06283D !important;
+    color: #1363DF !important;
+    font-weight: 600;
+ }
+
  .card {
     border-color: #AAB8C2 !important;
  }
@@ -47,15 +54,8 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
     text-decoration: none;
  }
  
- /* .customBorder {
+ .customBorder {
     height: 2.625rem !important;
- } */
-
- .buttonHover:hover {
-    background-color: #F5F8FA !important;
-    border-color: #06283D !important;
-    color: #1363DF !important;
-    font-weight: 600;
  }
 
  .customMargin {
@@ -84,6 +84,10 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
 
  .linkHover:hover, .btn-primary {
     color: #F5F8FA !important;
+ }
+
+ .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(225, 232, 237)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
  }
 
  .tweetsCard {
