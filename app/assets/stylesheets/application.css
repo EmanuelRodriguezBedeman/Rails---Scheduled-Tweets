@@ -7,15 +7,6 @@ body {
 background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
  }
 
- .homeRule {
-    border-color: #14171A;
-    border-style: none;
-    border-top-style: dotted;
-    border-width: 0.5rem;
-    margin: 9rem auto;
-    width: 30%;
- }
-
  .border-dark {
     border-color: #14171A !important;
     font-weight: 600;
@@ -74,8 +65,17 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
     text-align: center;
  }
 
- .homeIcons{
+ .homeIconSize{
     font-size: 6rem !important;
+ }
+
+ .homeRule {
+    border-color: #14171A;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 0.5rem;
+    margin: 9rem auto;
+    width: 30%;
  }
 
  li a, .navbar-brand, li {
