@@ -1,24 +1,20 @@
 <%= form_with url: log_in_path do |form| %>
-    <div class="row col-10 col-md-6 col-lg-5 col-xl-4 mx-auto">
-        <div class="container card px-0 text-center">
-            <div class="card-header">
+    <div class="row col-8 col-lg-4 mx-auto">
+        <div class="container-fluid card px-0">
+            <div class="card-header text-center">
                 <h2>Log-in to Schedule Tweets!</h2>
             </div>
-            <div class="card-body w-100 mx-auto">
-                <div class="my-3 row">                
-                    <%= form.label :email, "Email:", class: "form-label col-3 text-start my-auto" %>
-                    <div class="col">
-                        <%= form.text_field :email, class: "form-control", placeholder: "email@mail.com" %>
-                    </div>
+            <div class="card-body">
+                <div class="form-floating">
+                    <%= form.text_field :email, id:"floatingInput", class: "form-control", placeholder: "email@mail.com", type:"email" %>
+                    <%= form.label :email, "Email"%>
                 </div>
-                <div class="my-4 row">
-                    <%= form.label :password, "Password:", class: "form-label col-3 text-start py-auto my-1" %>
-                    <div class="col">
-                        <%= form.password_field :password, class: "form-control", placeholder: "password" %>
-                        <%= link_to "Forgot your password?", password_reset_path, class: "d-flex justify-content-end" %>
-                    </div>
+                <div class="form-floating my-3">
+                    <%= form.password_field :password, id:"floatingInput", class: "form-control", placeholder: "password", type:"password" %>
+                    <%= form.label :password, "Password"%>
+                    <%= link_to "Forgot your password?", password_reset_path, class: "d-flex justify-content-end my-2" %>
                 </div>
-                <div class="d-grid gap-2">
+                <div class="d-grid">
                     <%= form.submit "Log in", class: "btn btn-primary customHover" %>
                 </div> 
             </div>           
