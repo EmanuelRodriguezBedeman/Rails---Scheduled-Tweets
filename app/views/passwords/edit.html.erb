@@ -1,26 +1,22 @@
 <%= form_with model: Current.user, url: edit_password_path do |form| %>
     <%= render "shared/form_errors", form: form %>
     
-    <div class="row col-10 col-lg-8 col-xl-6 col-xxl-5 mx-auto">
-        <div class="container card px-0 text-center">
-            <div class="card-header">
+    <div class="col-8 col-lg-6 col-xl-5 col-xxl-4 mx-auto">
+        <div class="container card px-0">
+            <div class="card-header text-center">
                 <h1 class="px-0">Edit password</h1>
             </div>
-            <div class="card-body w-100 mx-auto">
-                <h5 class="card-title">Fill the fields below to change your password:</h5>
-                <div class="my-4 row">
-                    <%= form.label :password, "Password:", class: "form-label col-3 text-start my-1" %>
-                    <div class="col d-flex align-items-center">
-                        <%= form.password_field :password, class: "form-control", placeholder: "password" %>
-                    </div>
+            <div class="card-body px-5">
+                <h5 class="card-title text-center mb-3">Fill the fields below to change your password:</h5>
+                <div class="form-floating">
+                    <%= form.password_field :password, id:"floatingInput", class: "form-control", placeholder: "password", type:"password" %>
+                    <%= form.label :password, "Password:", for:"floatingPassword" %>
                 </div>
-                <div class="my-4 row">
-                    <%= form.label :repeat_password, "Repeat Password:", class: "form-label col-3 text-start my-1" %>
-                    <div class="col d-flex align-items-center">
-                        <%= form.password_field :repeat_password, class: "form-control", placeholder: "password" %>
-                    </div>
+                <div class="form-floating my-3">
+                    <%= form.password_field :repeat_password, id:"floatingInput", class: "form-control", placeholder: "password", type:"password" %>
+                    <%= form.label :repeat_password, "Repeat Password:", for:"floatingPassword" %>
                 </div>
-                <div class="d-grid gap-2">
+                <div class="d-grid">
                     <%= form.submit "Update Password", class: "btn btn-primary customHover" %>
                 </div>
             </div>
