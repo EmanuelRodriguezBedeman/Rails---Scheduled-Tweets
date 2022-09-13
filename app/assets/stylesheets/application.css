@@ -1,6 +1,16 @@
-/* @media only screen and (max-width: 991px) {
-    
-} */
+#darkButton {
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+    .darkSwitch {
+        display: none !important;
+    }
+
+    #darkButton {
+        display: block !important;
+    }
+}
 
 body {
     background-color: #f5f8fa;
