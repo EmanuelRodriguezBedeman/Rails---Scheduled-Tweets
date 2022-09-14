@@ -1,3 +1,18 @@
+#darkButton {
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
+    .darkSwitch {
+        display: none !important;
+    }
+
+    #darkButton {
+        display: block !important;
+    }
+}
+
+
 .transition-effect {
     transition: background 0.2s linear;
 }
