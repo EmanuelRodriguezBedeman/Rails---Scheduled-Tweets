@@ -50,3 +50,5 @@ function changeTheme(theme, switchPosition) {
         element.removeClass("dark-theme");
     }
 };
+
+export { themeToggle, changeTheme }
