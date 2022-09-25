@@ -96,6 +96,10 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
 
  /* ID's */
 
+ #outerFeature {
+    
+ }
+
  #createButton {
     border-radius: 0;
     width: 15%;
