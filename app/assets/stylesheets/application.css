@@ -96,19 +96,9 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
 
  /* ID's */
 
-
-
  #createButton {
     border-radius: 0;
     width: 15%;
- }
-
- #innerFeature {
-    
- }
-
- #outerFeature {
-    
  }
 
  /* Start of theme button/switch style */
