@@ -101,6 +101,10 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
     width: 15%;
  }
 
+ #mindImage {
+    background-color: yellow;
+ }
+
  /* Start of theme button/switch style */
 
 .bi-lightbulb {
