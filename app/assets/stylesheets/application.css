@@ -106,11 +106,15 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
  }
 
  #outerFeature .featureTitle {
-    color: red;
+    color: #112C5F;
  }
 
  #innerFeature {
     background-color: #FDF5EA;
+ }
+
+ #innerFeature .featureTitle {
+    color: #01030F;
  }
 
  #mindImage {
