@@ -117,8 +117,12 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
     color: #00181F;
  }
 
+ #innerFeature .featureText {
+    /* color: red; */
+ }
+
  #mindImage {
-    /* background-color: blue; */
+    background-color: blue;
  }
 
  /* Start of theme button/switch style */
