@@ -106,6 +106,7 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
  }
 
  #outerFeature .featureTitle {
+    background-color: yellow;
     color: #112C5F;
  }
 
