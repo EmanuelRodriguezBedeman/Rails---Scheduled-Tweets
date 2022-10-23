@@ -101,6 +101,14 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
     width: 15%;
  }
 
+ #outerFeature {
+    background-color: #FDF5EA;
+ }
+
+ #innerFeature {
+    background-color: #D7D8D9;
+ }
+
  #mindImage {
     /* background-color: blue; */
  }
