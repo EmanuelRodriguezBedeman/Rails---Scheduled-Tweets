@@ -106,12 +106,13 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
  }
 
  #outerFeature .featureTitle {
-    background-color: yellow;
+    /* background-color: yellow; */
+    border-width: 0.1rem;
     color: #112C5F;
  }
 
  #outerFeature .featureText {
-    background-color: red;
+    /* background-color: red; */
  }
 
  #innerFeature {
@@ -127,7 +128,7 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
  }
 
  #mindImage {
-    background-color: blue;
+    /* background-color: blue; */
  }
 
  /* Start of theme button/switch style */
