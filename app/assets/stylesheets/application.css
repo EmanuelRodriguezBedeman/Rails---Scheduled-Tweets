@@ -52,6 +52,10 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
  .customPadding {
     padding-bottom: 10rem;
  }
+
+ .customRound {
+    border-radius: 20px 100px 100px 20px;
+ }
  
  .footer {
     position: fixed;
