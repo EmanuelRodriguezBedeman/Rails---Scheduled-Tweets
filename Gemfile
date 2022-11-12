@@ -16,19 +16,19 @@ gem "sqlite3", "~> 1.4"
 gem "puma", "~> 5.0"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-gem "importmap-rails"
+gem "importmap-rails", "~> 1.1.5"
 
 # Hotwire
-gem "hotwire-rails"
+gem "hotwire-rails", "~> 0.1.3"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails"
+gem "turbo-rails", "~> 1.3.2"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem "stimulus-rails"
+gem "stimulus-rails", "~> 1.1.1"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem "jbuilder"
+gem "jbuilder", "~> 2.11.5"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -87,4 +87,4 @@ gem "zeitwerk", "~> 2.6"
 
 gem "minitest", "~> 5.7"
 
-gem 'redis'
+gem 'redis', "~> 4.8.0"

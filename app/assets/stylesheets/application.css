@@ -96,12 +96,12 @@ background-image: url("https://www.transparenttextures.com/patterns/escheresque.
 
  .outerFeature {
     background-color: #F5FCFB;
+    border-radius: 20px 100px 100px 20px;
     margin-left: 0;
     margin-right: 0;
  }
 
  .outerFeature .featureTitle {
-    border-radius: 20px 100px 100px 20px;
     border-width: 0.1rem;
     color: #112C5F;
  }
