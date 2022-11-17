@@ -1,17 +1,15 @@
-<div data-controller="darkmode">
-    <div id="darkButton" class="d-inline">
-        <button type="button" class="btn btn-circle btn-sm" onClick="themeToggle()">
-            <i class="bi bi-lightbulb"></i>
-        </button>
-    </div>
+<div id="darkButton" class="d-inline">
+    <button type="button" class="btn btn-circle btn-sm" data-action="click->darkmode#themeToggle">
+        <i class="bi bi-lightbulb"></i>
+    </button>
+</div>
     
-    <div class="darkSwitch">
-        <!-- Dark Mode Switch: -->
-        <input class="switch-input" type="checkbox" id="darkSwitch" onChange="themeToggle()">
-        <label class="switch-label" for="darkSwitch">
-            <i class="bi bi-moon"></i>
-            <i class="bi bi-sun"></i>
-            <div id="ball" class='ball'></div>
-        </label>
-    </div>
+<div class="darkSwitch">
+    <!-- Dark Mode Switch: -->
+    <input class="switch-input" type="checkbox" id="darkSwitch" data-action="click->darkmode#themeToggle">
+    <label class="switch-label" for="darkSwitch">
+        <i class="bi bi-moon"></i>
+        <i class="bi bi-sun"></i>
+        <div id="ball" class='ball' data-darkmode-target="ball"></div>
+    </label>
 </div>
