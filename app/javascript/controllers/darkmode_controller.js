@@ -5,5 +5,6 @@ export default class extends Controller {
 
     themeToggle() {
         this.element.classList.toggle("dark-theme")
+        console.log(this.element.classList.contains("transition-effect"))
     }
 }
