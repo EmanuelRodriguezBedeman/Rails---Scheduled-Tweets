@@ -11,12 +11,12 @@ export default class extends Controller {
 
     themeToggle() {
     
-        this.element.classList.toggle("dark-theme")
+        element.classList.toggle("dark-theme")
         
         let preferenceTheme = localStorage.getItem("preferenceTheme")
     
-        if (this.element.classList.contains("transition-effect") === false) {
-            this.element.classList.add("transition-effect")
+        if (element.classList.contains("transition-effect") === false) {
+            element.classList.add("transition-effect")
         }
     
         if (preferenceTheme === "dark") {
