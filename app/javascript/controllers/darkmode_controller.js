@@ -22,12 +22,11 @@ export default class extends Controller {
         if (preferenceTheme === "dark") {
             localStorage.setItem("preferenceTheme", "light")
 
-            
+            ball.style.transform = `translateX(0rem)`
         } else if (preferenceTheme === "light") {
             localStorage.setItem("preferenceTheme", "dark")
 
-            
+            ball.style.transform = `translateX(1.5rem)`
         }
     }
-    
 }
