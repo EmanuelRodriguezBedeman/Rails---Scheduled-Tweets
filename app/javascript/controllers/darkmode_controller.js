@@ -1,11 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
 
-function changeTheme(theme, switchPosition) {
-    this.ball.style.transform = `translateX(${switchPosition}rem)`
-
-    localStorage.setItem("preferenceTheme", theme)
-}
-
 export default class extends Controller {
     static targets = ["element", "ball"]
 
