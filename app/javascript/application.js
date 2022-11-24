@@ -2,4 +2,4 @@
 
 import "@hotwired/turbo-rails"
 import "controllers"
-import "custom/themeToggle"
+// import "custom/themeToggle"

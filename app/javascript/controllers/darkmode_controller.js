@@ -1,7 +1,28 @@
 import { Controller } from "@hotwired/stimulus"
 
+const osThemeDark = matchMedia("(prefers-color-scheme: dark)").matches;
+
 export default class extends Controller {
     static targets = ["element", "ball"]
+
+    connect() {
+        let preferenceTheme = localStorage.getItem("preferenceTheme")
+
+        if (preferenceTheme === "dark") {
+            this.element.classList.add("dark-theme")
+
+            localStorage.setItem("preferenceTheme", "dark")
+
+            ball.style.transform = `translateX(1.5rem)`
+
+        } else if (preferenceTheme === "light") {
+            this.element.classList.remove("dark-theme")
+
+            localStorage.setItem("preferenceTheme", "light")
+
+            ball.style.transform = `translateX(0rem)`
+        }
+    }
 
     themeToggle() {
     
