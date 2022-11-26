@@ -27,7 +27,6 @@ export default class extends Controller {
     }
 
     themeToggle() {
-    
         this.element.classList.toggle("dark-theme")
         
         let preferenceTheme = localStorage.getItem("preferenceTheme")
@@ -37,13 +36,15 @@ export default class extends Controller {
         }
     
         if (preferenceTheme === "dark") {
-            localStorage.setItem("preferenceTheme", "light")
-
-            ball.style.transform = `translateX(0rem)`
+            this.changeTheme("light", "0")
         } else if (preferenceTheme === "light") {
-            localStorage.setItem("preferenceTheme", "dark")
-
-            ball.style.transform = `translateX(1.5rem)`
+            this.changeTheme("dark", "1.5")
         }
+    }
+
+    changeTheme(theme, switchPosition) {
+        localStorage.setItem("preferenceTheme", theme)
+
+        ball.style.transform = `translateX(${switchPosition}rem)`
     }
 }
