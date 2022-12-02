@@ -78,7 +78,7 @@ body {
     background-color: #F7FFFE;
  }
 
- .innerFeature .featureTitle {
+ .featureText {
     color: #00181F;
  }
 
@@ -101,7 +101,7 @@ body {
     margin-right: 0;
  }
 
- .outerFeature .featureTitle {
+.featureTitle {
     border-width: 0.1rem;
     color: #112C5F;
  }
