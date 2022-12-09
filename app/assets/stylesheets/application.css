@@ -71,7 +71,7 @@ body {
  }
 
  .innerFeature {
-    background-color: #F7FFFE;
+    background-color: #F5F8FA;
  }
 
  .featureText {
@@ -91,7 +91,7 @@ body {
  }
 
  .outerFeature {
-    background-color: #F5FCFB;
+    background-color: #F5F8FA;
     border-radius: 20px 100px 100px 20px;
     margin-left: 0;
     margin-right: 0;
