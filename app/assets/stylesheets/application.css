@@ -79,10 +79,7 @@ body {
     width: 30%;
  }
 
- .innerFeature {
-    background-color: #F5F8FA;
-    border-radius: 100px 20px 20px 100px;
- }
+ .innerFeature {}
 
  li a, .navbar-brand, li {
     color: #e6e6e6 !important;
