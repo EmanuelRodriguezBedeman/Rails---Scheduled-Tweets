@@ -1,4 +1,4 @@
-const osThemeDark = matchMedia("(prefers-color-scheme: dark)").matches;
+var osThemeDark = matchMedia("(prefers-color-scheme: dark)").matches;
 const element = $("body");
 let preferenceTheme = localStorage.getItem("preferenceTheme");
 
