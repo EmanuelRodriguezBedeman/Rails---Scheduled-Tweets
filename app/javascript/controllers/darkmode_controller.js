@@ -8,21 +8,15 @@ export default class extends Controller {
     connect() {
         let preferenceTheme = localStorage.getItem("preferenceTheme")
 
-        console.log(osThemeDark);
-
-        if (preferenceTheme === "dark" || preferenceTheme === null && osThemeDark) {
+        if ((preferenceTheme === "dark") || (preferenceTheme === null && osThemeDark)) {
             this.element.classList.add("dark-theme")
 
-            localStorage.setItem("preferenceTheme", "dark")
-
-            ball.style.transform = `translateX(1.5rem)`
+            this.changeTheme("dark", "1.5")
 
         } else if (preferenceTheme === "light" || osThemeDark === false) {
             this.element.classList.remove("dark-theme")
 
-            localStorage.setItem("preferenceTheme", "light")
-
-            ball.style.transform = `translateX(0rem)`
+            this.changeTheme("light", "0")
         }
     }
 
