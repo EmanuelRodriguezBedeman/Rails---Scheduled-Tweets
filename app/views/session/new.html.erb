@@ -6,11 +6,11 @@
             </div>
             <div class="card-body px-5">
                 <div class="form-floating">
-                    <%= form.text_field :email, id:"floatingInput", class: "form-control", placeholder: "email@mail.com", type:"email" %>
+                    <%= form.text_field :email, class: "form-control", placeholder: "email@mail.com", type:"email" %>
                     <%= form.label :email, "Email", for:"floatingInput" %>
                 </div>
                 <div class="form-floating my-3">
-                    <%= form.password_field :password, id:"floatingInput", class: "form-control", placeholder: "password", type:"password" %>
+                    <%= form.password_field :password, class: "form-control", placeholder: "password", type:"password" %>
                     <%= form.label :password, "Password", for:"floatingPassword" %>
                     <%= link_to "Forgot your password?", password_reset_path, class: "d-flex justify-content-end my-2" %>
                 </div>
