@@ -153,7 +153,7 @@ body {
 .switch-label {
     width: 3.125rem;
     height: 1.625rem;
-    background-color: #0E53BD;
+    background-color: #094299;
     display: flex;
     border-radius: 3.125rem;
     align-items: center;
@@ -190,7 +190,7 @@ body {
 
 .bi-sun {
     border-radius: 1rem;
-    color: yellow;
+    color: #FFFF00;
     font-weight: bold; 
     width: 1.15rem;
     height: 1.15rem;
