@@ -12,11 +12,7 @@ body {
     background-color: #1363DF !important;
  }
 
- .bi-pencil {
-    color: #1363DF;
- }
-
- .bi-twitter {
+ .bi-pencil, .bi-twitter {
     color: #1363DF;
  }
 
