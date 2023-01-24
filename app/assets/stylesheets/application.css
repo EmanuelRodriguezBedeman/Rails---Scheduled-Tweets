@@ -48,6 +48,15 @@ body {
  .customPadding {
     padding-bottom: 10rem;
  }
+
+ .featureText {
+    color: #00070B;
+ }
+
+ .featureTitle {
+    border-width: 0.1rem;
+    color: #112C5F;
+ }
  
  .footer {
     position: fixed;
@@ -75,10 +84,6 @@ body {
     border-radius: 100px 20px 20px 100px;
  }
 
- .featureText {
-    color: #00070B;
- }
-
  li a, .navbar-brand, li {
     color: #e6e6e6 !important;
  }
@@ -96,11 +101,6 @@ body {
     border-radius: 20px 100px 100px 20px;
     margin-left: 0;
     margin-right: 0;
- }
-
-.featureTitle {
-    border-width: 0.1rem;
-    color: #112C5F;
  }
 
  .tweetsCard {
@@ -154,7 +154,7 @@ body {
 .switch-label {
     width: 3.125rem;
     height: 1.625rem;
-    background-color: #094299;
+    background-color: #2F5A9C;
     display: flex;
     border-radius: 3.125rem;
     align-items: center;
