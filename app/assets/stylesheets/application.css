@@ -101,9 +101,15 @@ body {
 
  /* IDs */
 
- #firstFeature {}
+ .edgeBackground {
+    background-color: #F5F8FA;
+    border-radius: 20px 100px 100px 20px;
+ }
 
- #secondFeature {}
+ .centerBackground {
+    background-color: #F5F8FA;
+    border-radius: 100px 20px 20px 100px;
+ }
  
  /* Start of theme button/switch style */
 
