@@ -9,7 +9,7 @@ body {
  }
 
  .btn-primary, .navbar {
-    background-color: #1363DF !important;
+    background-color: #0E54AF !important;
  }
 
  .bi-pencil, .bi-twitter {
@@ -49,15 +49,19 @@ body {
     padding-bottom: 10rem;
  }
 
- .featureText {
-    color: #00070B;
+ .featureContainer{
+    background-color: #DFE1E3;
+    width: fit-content;
+ }
+
+ .featureDescription {
+    color: #0B0B0B;
  }
 
  .featureTitle {
-    border-width: 0.1rem;
-    color: #112C5F;
+    color: #FAFBFE;
  }
- 
+
  .footer {
     position: fixed;
     left: 0;
@@ -91,26 +95,31 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(225, 232, 237)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
  }
 
+ .roundBackground {
+    background-color: #F5F8FA;
+    border-radius: 30px 30px 30px 30px;
+ }
+
  .tweetsCard {
     background-color: #F5F8FA !important;
+ }
+
+ .titleBgLeft {
+    background-color: #094491;
+    border-radius: 10px 100px 100px 10px;
+    width: fit-content;
+ }
+
+  .titleBgRight {
+    background-color: #094491;
+    border-radius: 100px 10px 10px 100px;
+    width: fit-content;
  }
 
  .vr {
     color: #e6e6e6 !important;
  }
 
- /* IDs */
-
- .edgeBackground {
-    background-color: #F5F8FA;
-    border-radius: 20px 100px 100px 20px;
- }
-
- .centerBackground {
-    background-color: #F5F8FA;
-    border-radius: 100px 20px 20px 100px;
- }
- 
  /* Start of theme button/switch style */
 
 .bi-lightbulb {
@@ -147,7 +156,7 @@ body {
 .switch-label {
     width: 3.125rem;
     height: 1.625rem;
-    background-color: #2F5A9C;
+    background-color: #0E54AF;
     display: flex;
     border-radius: 3.125rem;
     align-items: center;

@@ -1,9 +1,7 @@
 <div class="container d-block mt-5 px-0">
     <div class="container text-center">
         <div class="row">
-            <h1 class="col-lg-12 mb-5">
-                Scheduled Tweets!
-            </h1>
+            <h1 class="siteTitle col-lg-12 mb-5">Scheduled Tweets!</h1>
         </div>
         <div class="row justify-content-center">
             <i class="col-2 homeIconSize bi bi-twitter pe-0"></i>
@@ -14,32 +12,34 @@
     <div id="features" class="d-flex flex-column w-auto customMargin">
 
         <div id="firstFeature">
-            <div class="edgeBackground d-flex row row-cols-1 row-cols-lg-2 my-5 mx-0">
-                <%= image_tag "mind.png", id:"mindImage", class:"m-2 col-3 col-lg-2" %>
+            <div class="featureContainer d-flex row row-cols-1 row-cols-lg-2 my-5 mx-0">
+                <%= image_tag "mind.png", id:"mindImage", class:"roundBackground m-2 col-3 col-lg-2" %>
                 <div id="featureInfo" class="col-12 col-lg-7 align-self-center text-start ps-0 ms-4">
-                    <h2 class="featureTitle lh-lg">Have a tweet in mind?</h2>
-                    <p class="featureText lh-sm ms-3">
-                        <i class="bi bi-arrow-return-right mx-2"></i>
-                        A powerful quote from a movie just striked your mind?
-                    </p>
-                    <p class="featureText lh-sm ms-3">
-                        <i class="bi bi-arrow-return-right mx-2"></i>
-                        Some huge idea that could make an impact?
-                    </p>
-                    <p class="featureText lh-sm ms-3">
-                        <i class="bi bi-arrow-right mx-2"></i>
-                        Don't let it slip away! Write it down before you forget it.
-                    </p>
+                    <h2 class="featureTitle titleBgLeft lh-lg ps-2 pe-4">Have a tweet in mind?</h2>
+                    <div class="featureDescription">
+                        <p class="featureText lh-sm ms-3">
+                            <i class="bi bi-arrow-return-right mx-2"></i>
+                            A powerful quote from a movie just striked your mind?
+                        </p>
+                        <p class="featureText lh-sm ms-3">
+                            <i class="bi bi-arrow-return-right mx-2"></i>
+                            Some huge idea that could make an impact?
+                        </p>
+                        <p class="featureText lh-sm ms-3">
+                            <i class="bi bi-arrow-right mx-2"></i>
+                            Don't let it slip away! Write it down before you forget it.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="secondFeature">
-            <div class="centerBackground d-flex justify-content-end my-5">
-                <div class="d-flex mx-0 flex-lg-row-reverse row row-cols-1 row-cols-lg-2">
-                    <%= image_tag "clock.png", id:"clockImage", class:"m-2 col-3 col-lg-2" %>
-                    <div id="featureInfo" class="col-12 col-lg-7 align-self-center text-start">
-                        <h2 class="featureTitle text-end lh-lg">Tired of watching the clock to post it?</h2>
+            <div class="featureContainer d-flex flex-lg-row-reverse row row-cols-1 row-cols-lg-2 ms-auto my-5">
+                <%= image_tag "clock.png", id:"clockImage", class:"roundBackground m-2 col-3 col-lg-2" %>
+                <div id="featureInfo" class="col-12 col-lg-7 align-self-center text-start">
+                    <h2 class="featureTitle titleBgRight text-end lh-lg ms-auto ps-4 pe-2">Tired of watching the clock to post it?</h2>
+                    <div class="featureDescription">
                         <p class="featureText text-end lh-sm ms-3">
                             Now you can stop staring at it!
                             <i class="bi bi-arrow-return-left mx-2"></i>
@@ -54,16 +54,18 @@
         </div>
 
         <div id="thirdFeature">
-            <div class="edgeBackground d-flex row row-cols-1 row-cols-lg-2 my-5 mx-0">
-                <%= image_tag "tweet.png", id:"tweetImage", class:"m-2 col-3 col-lg-2" %>
+            <div class="featureContainer d-flex row row-cols-1 row-cols-lg-2 my-5 mx-0">
+                <%= image_tag "tweet.png", id:"tweetImage", class:"roundBackground m-2 col-3 col-lg-2" %>
                 <div id="featureInfo" class="col-11 col-lg-7 align-self-center text-start ps-0 ms-4">
-                    <h2 class="featureTitle lh-lg">Watch your tweets getting posted!</h2>
-                    <p class="featureText lh-sm ms-3">
-                        <i class="bi bi-arrow-return-right mx-2"></i>
-                        Just sit down, chill and see the results of your long tactically planned tweets...
-                    </p>
-                    <p class="lh-lg text-end fw-bold fst-italic">...completely by themselves!</p>
-                </div>
+                    <h2 class="featureTitle titleBgLeft lh-lg ps-2 pe-4">Watch your tweets getting posted!</h2>
+                    <div class="featureDescription">
+                        <p class="featureText lh-sm ms-3">
+                            <i class="bi bi-arrow-return-right mx-2"></i>
+                            Just sit down, chill and see the results of your long tactically planned tweets...
+                        </p>
+                        <p class="lh-lg text-end fw-bold fst-italic">...completely by themselves!</p>
+                    </div>
+                    </div>
             </div>
         </div>
     </div>
