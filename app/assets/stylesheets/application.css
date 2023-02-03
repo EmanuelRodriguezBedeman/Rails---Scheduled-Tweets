@@ -31,6 +31,10 @@ body {
     text-decoration: underline;
  }
 
+ .card-width{
+    max-width: 66%;
+ }
+
  .customAnchor {
     color: #14171A;
     font-weight: 500;
