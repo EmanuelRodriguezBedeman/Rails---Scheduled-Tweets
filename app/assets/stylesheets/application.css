@@ -53,17 +53,8 @@ body {
     padding-bottom: 10rem;
  }
 
- .featureContainer{
-    background-color: #DFE1E3;
-    width: fit-content;
- }
-
- .featureDescription {
+ .description-text {
     color: #0B0B0B;
- }
-
- .featureTitle {
-    color: #FAFBFE;
  }
 
  .footer {
@@ -78,15 +69,6 @@ body {
     font-size: 6rem !important;
  }
 
- .homeRule {
-    border-color: #14171A;
-    border-style: none;
-    border-top-style: dotted;
-    border-width: 0.5rem;
-    margin: 9rem auto;
-    width: 30%;
- }
-
  li a, .navbar-brand, li {
     color: #e6e6e6 !important;
  }
@@ -99,24 +81,25 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(225, 232, 237)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
  }
 
- .roundBackground {
-    background-color: #F5F8FA;
-    border-radius: 30px 30px 30px 30px;
- }
-
  .tweetsCard {
     background-color: #F5F8FA !important;
  }
 
- .titleBgLeft {
+ .title-color-left {
     background-color: #094491;
     border-radius: 10px 100px 100px 10px;
+    color: #FAFBFE;
+    padding-right: 25px;
+    padding-left: 7px;
     width: fit-content;
  }
 
-  .titleBgRight {
+  .title-color-right {
     background-color: #094491;
     border-radius: 100px 10px 10px 100px;
+    color: #FAFBFE;
+    padding-right: 7px;
+    padding-left: 25px;
     width: fit-content;
  }
 
