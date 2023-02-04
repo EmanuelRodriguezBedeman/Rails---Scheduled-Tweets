@@ -11,15 +11,15 @@
 
     <div id="features" class="">
 
-        <div id="firstFeature" class="card card-width custom-margin">
+        <div id="firstFeature" class="card card-width border-0 custom-margin">
             <div class="row gx-0">
                 <div class="col-md-3 mx-3">
                     <%= image_tag "mind.png", id:"mindImage", class:"col-4 col-md-12" %>
                 </div>
                 <div class="col-md-8">
-                    <div class="card-body">
+                    <div class="card-body mt-3">
                         <h5 class="card-title fs-2 title-color-left">Have a tweet in mind?</h5>
-                        <div class="card-text description-text">
+                        <div class="card-text description-text mt-4">
                             <p>
                                 <i class="bi bi-arrow-return-right mx-2"></i>
                                 A powerful quote from a movie just striked your mind?
@@ -38,12 +38,12 @@
             </div>
         </div>
 
-        <div id="secondFeature" class="card card-width custom-margin ms-auto">
-            <div class="row gx-0">
+        <div id="secondFeature" class="card card-width border-0 custom-margin ms-auto">
+            <div class="d-none d-md-flex row gx-0">
                 <div class="col-md-8 ms-auto">
-                    <div class="card-body text-end">
+                    <div class="card-body mt-3 text-end">
                         <h5 class="card-title fs-2 text-end title-color-right ms-auto">Tired of watching the clock?</h5>
-                        <div class="card-text description-text">
+                        <div class="card-text description-text mt-4">
                             <p>
                                 Now you can stop staring at it!
                                 <i class="bi bi-arrow-return-left mx-2"></i>
@@ -59,17 +59,37 @@
                     <%= image_tag "clock.png", id:"clockImage", class:"col-4 col-md-12" %>
                 </div>
             </div>
+            <div class="d-md-none row gx-0">
+                <div class="col-md-3 mx-3">
+                    <%= image_tag "clock.png", id:"clockImage", class:"col-4 col-md-12" %>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body mt-3">
+                        <h5 class="card-title fs-2 title-color-left">Tired of watching the clock?</h5>
+                        <div class="card-text description-text mt-4">
+                            <p>
+                                <i class="bi bi-arrow-return-right mx-2"></i>
+                                Now you can stop staring at it!                                
+                            </p>
+                            <p>
+                                <i class="bi bi-arrow-right mx-2"></i>
+                                You can set the time to post your tweet, without time limit!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div id="thirdFeature" class="card card-width custom-margin">
+        <div id="thirdFeature" class="card card-width border-0 custom-margin">
             <div class="row gx-0">
                 <div class="col-md-3 mx-3">
                     <%= image_tag "tweet.png", id:"mindImage", class:"col-4 col-md-12" %>
                 </div>
                 <div class="col-md-8">
-                    <div class="card-body">
+                    <div class="card-body mt-3">
                         <h5 class="card-title fs-2 title-color-left">Watch your tweets getting posted!</h5>
-                        <div class="card-text description-text">
+                        <div class="card-text description-text mt-4">
                             <p>
                                 <i class="bi bi-arrow-return-right mx-2"></i>
                                 Just sit down, chill and see the results of your long tactically planned tweets...

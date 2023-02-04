@@ -32,7 +32,7 @@ body {
  }
 
  .card-width{
-    max-width: 66%;
+    max-width: 53.125em;
  }
 
  .customAnchor {
@@ -87,19 +87,19 @@ body {
 
  .title-color-left {
     background-color: #094491;
-    border-radius: 10px 100px 100px 10px;
+    border-radius: 0.625rem 6.25rem 6.25rem 0.625rem;
     color: #FAFBFE;
-    padding-right: 25px;
-    padding-left: 7px;
+    padding-right: 1.563rem;
+    padding-left: 0.438rem;
     width: fit-content;
  }
 
   .title-color-right {
     background-color: #094491;
-    border-radius: 100px 10px 10px 100px;
+    border-radius: 6.25rem 0.625rem 0.625rem 6.25rem;
     color: #FAFBFE;
-    padding-right: 7px;
-    padding-left: 25px;
+    padding-right: 0.438rem;
+    padding-left: 1.563rem;
     width: fit-content;
  }
 
