@@ -16,7 +16,7 @@ body {
     color: #1363DF;
  }
 
- .buttonHover:hover {
+ .button-hover:hover {
     background-color: #F5F8FA !important;
     border-color: #06283D !important;
     color: #1363DF !important;
