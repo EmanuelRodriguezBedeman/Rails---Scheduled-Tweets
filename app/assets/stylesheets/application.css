@@ -35,13 +35,13 @@ body {
     max-width: 53.125em;
  }
 
- .customAnchor {
+ .custom-anchor {
     color: #14171A;
     font-weight: 500;
     text-decoration: none;
  }
  
- .customBorder {
+ .custom-border {
     height: 2.625rem !important;
  }
 
@@ -49,7 +49,7 @@ body {
     margin: 10rem 0 10rem;
  }
 
- .customPadding {
+ .custom-padding {
     padding-bottom: 10rem;
  }
 
@@ -65,7 +65,7 @@ body {
     text-align: center;
  }
 
- .homeIconSize{
+ .home-iconSize{
     font-size: 6rem !important;
  }
 
@@ -73,7 +73,7 @@ body {
     color: #e6e6e6 !important;
  }
 
- .linkHover:hover, .btn-primary {
+ .link-hover:hover, .btn-primary {
     color: #F5F8FA !important;
  }
 
@@ -81,7 +81,7 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(225, 232, 237)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
  }
 
- .tweetsCard {
+ .tweets-card {
     background-color: #F5F8FA !important;
  }
 
@@ -124,7 +124,7 @@ body {
     border: 0.063rem solid #000000;
 }
 
-.darkSwitch, #darkButton{
+.dark-switch, #dark-button{
     position: absolute;
     right: 2.5rem;
     bottom: 5rem;

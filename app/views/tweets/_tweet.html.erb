@@ -1,9 +1,9 @@
-<div class="tweetsCard card card-body mb-3">
+<div class="tweets-card card card-body mb-3">
     <div class="d-flex align-items-center">
         <% if tweet.published? %>
             <%= image_tag tweet.twitter_account.image, class: "rounded-circle border border-2 border-primary p-1 border-opacity-50 me-3" %>
             <div class="d-flex align-items-start flex-column me-3">
-                <%= link_to "@#{tweet.twitter_account.username}:", "https://twitter.com/#{tweet.twitter_account.username}", target: :_blank, class: "customAnchor" %>
+                <%= link_to "@#{tweet.twitter_account.username}:", "https://twitter.com/#{tweet.twitter_account.username}", target: :_blank, class: "custom-anchor" %>
                 <div>
                     <span class="fst-italic text-black-50">"<%= tweet.body %>"</span>
                 </div>
@@ -12,7 +12,7 @@
         <% else %>
             <%= image_tag tweet.twitter_account.image, class: "rounded-circle border border-2 border-primary p-1 border-opacity-50 me-3" %>
             <div class="d-flex align-items-start flex-column me-3">
-                <%= link_to "@#{tweet.twitter_account.username}:", "https://twitter.com/#{tweet.twitter_account.username}", target: :_blank, class: "customAnchor" %>
+                <%= link_to "@#{tweet.twitter_account.username}:", "https://twitter.com/#{tweet.twitter_account.username}", target: :_blank, class: "custom-anchor" %>
                 <div class="ScheduledTweet">
                     <span class="fst-italic text-black-50">"<%= tweet.body %>"</span>
                     <%= link_to edit_tweet_path(tweet), class: "text-decoration-none" do %>

@@ -10,15 +10,15 @@
             <div class="card-body px-5">
                 <div class="form-floating">
                     <%= form.text_field :email, class: "form-control", placeholder: "email@email.com", type: "email" %>
-                    <%= form.label :email, "Email:", for:"floatingInput" %>
+                    <%= form.label :email, "Email:", for:"floating-input" %>
                 </div>
                 <div class="form-floating my-3">
                     <%= form.password_field :password, class: "form-control", placeholder: "password", type:"password" %>
-                    <%= form.label :password, "Password:", for:"floatingPassword" %>
+                    <%= form.label :password, "Password:", for:"floating-password" %>
                 </div>
                 <div class="form-floating">
                     <%= form.password_field :password_confirmation, class: "form-control", placeholder: "password", type:"password" %>
-                    <%= form.label :password_confirmation, "Repeat password:", for:"floatingPassword" %>
+                    <%= form.label :password_confirmation, "Repeat password:", for:"floating-password" %>
                 </div>
                 <div class="d-grid mt-4">
                     <%= form.submit "Register", class: "btn btn-primary button-hover" %>

@@ -4,7 +4,7 @@
 
         <!-- Navbar Title -->
         <div class="navbar-header" role="navigation">
-            <%= link_to tweets_path, class:"navbar-brand h1 me-3 linkHover" do %>
+            <%= link_to tweets_path, class:"navbar-brand h1 me-3 link-hover" do %>
                 <span class="border-bottom">Tweets</span>
                 <i class="bi bi-twitter text-white ms-1"></i>
             <% end %>
@@ -16,21 +16,21 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbar-nav">
             <!-- Navbar Links -->
             <ul class="nav navbar-nav navbar-left large-navbar-items">
                 <hr class="d-lg-none border-white my-1 w-25">
                 <div class="vr d-none d-lg-block "></div>
                 <li class= "nav-item" id="home">
-                    <%= link_to "Home", root_path, class:"nav-link linkHover"%>
+                    <%= link_to "Home", root_path, class:"nav-link link-hover"%>
                 </li>
                 <div class="vr d-none d-lg-block "></div>
                 <li class= "nav-item" id="about">
-                    <%= link_to "About", about_path, class:"nav-link linkHover"%>
+                    <%= link_to "About", about_path, class:"nav-link link-hover"%>
                 </li>
                 <div class="vr d-none d-lg-block "></div>
-                <li class= "nav-item" id="twitterAccounts">
-                    <%= link_to "Twitter Accounts", twitter_accounts_path, class:"nav-link linkHover"%>
+                <li class= "nav-item" id="twitter-accounts">
+                    <%= link_to "Twitter Accounts", twitter_accounts_path, class:"nav-link link-hover"%>
                 </li>
             </ul>
 
@@ -45,7 +45,7 @@
                         </li>
                         <div class="vr d-none d-lg-block mx-2 p-0"></div>
                         <li class="nav-item">
-                            <%= button_to "Logout", logout_path, method: :delete, class:"btn btn-outline-light customBorder button-hover border rounded-pill"%>
+                            <%= button_to "Logout", logout_path, method: :delete, class:"btn btn-outline-light custom-border button-hover border rounded-pill"%>
                         </li>
                     </div>
 
