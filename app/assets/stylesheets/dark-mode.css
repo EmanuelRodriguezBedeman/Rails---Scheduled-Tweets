@@ -1,13 +1,13 @@
-#darkButton {
+#dark-button {
     display: none;
 }
 
 @media only screen and (max-width: 576px) {
-    .darkSwitch {
+    .dark-switch {
         display: none !important;
     }
 
-    #darkButton {
+    #dark-button {
         display: block !important;
     }
 }
