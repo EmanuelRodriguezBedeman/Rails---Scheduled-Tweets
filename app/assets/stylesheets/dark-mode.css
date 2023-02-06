@@ -17,8 +17,8 @@
 }
 
 body.dark-theme {
-    background-color: #27241D;
-    color: #B8B2A7;
+    background-color: #050505;
+    color: #FEF6E7;
 }
 
 body.dark-theme .text-primary{
@@ -26,8 +26,8 @@ body.dark-theme .text-primary{
 }
 
 body.dark-theme button {
-    color: #999999;
     background-color: #27241D;
+    color: #999999;
 }
 
 body.dark-theme button:hover {
@@ -73,18 +73,18 @@ body.dark-theme textarea,
 body.dark-theme textarea:focus,
 body.dark-theme input,
 body.dark-theme input:focus {
-    background-color: #B8B2A7;
+    background-color: #FEF6E7;
 }
 
 body.dark-theme .btn {
-    background-color: #B8B2A7 !important;
-    border-color: #B8B2A7 !important;
+    background-color: #FEF6E7 !important;
+    border-color: #FEF6E7 !important;
     color: #504A40;
     font-weight: bold;
 }
 
 body.dark-theme footer {
-    background-color: #B8B2A7;
+    background-color: #FEF6E7;
 }
 
 body.dark-theme footer p {
@@ -94,7 +94,7 @@ body.dark-theme footer p {
 /* Start of Dark-theme Switch */
 
 body.dark-theme .switch-label {
-    background-color: #B8B2A7;
+    background-color: #050505;
 }
 
 body.dark-theme .btn-circle.btn-sm {
