@@ -29,7 +29,7 @@ body {
     border-color: #AAB8C2 !important;
  }
 
- .card a:hover {
+ .card a:hover, a i:hover {
     text-decoration: underline;
  }
 
@@ -67,13 +67,15 @@ body {
     text-align: center;
  }
 
- .header-hover:hover {
-    font-size: 1.313rem;
+ .navbar-brand:hover,
+ .navbar-brand:hover i {
+    color: #FEF6E7 !important;
+    /* font-size: 1.313rem; */
  }
 
  .home-icon{
     font-size: 6rem !important;
-        color: linear-gradient(0deg, rgba(14,84,176,1) 0%, rgba(10,60,125,1) 100%);
+    color: linear-gradient(0deg, rgba(14,84,176,1) 0%, rgba(10,60,125,1) 100%);
  }
 
  li a, .navbar-brand, li {
@@ -85,6 +87,7 @@ body {
  }
 
  .link-hover:hover {
+    color: #FEF6E7;
     text-decoration: underline;
  }
 
