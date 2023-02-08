@@ -21,6 +21,11 @@ body.dark-theme {
     color: #FEF6E7;
 }
 
+body.dark-theme button:hover {
+    background-color: #27241D;
+    color: #FAEDF0;
+}
+
 body.dark-theme .card {
     background-color: #16181C !important;
 }
@@ -29,9 +34,12 @@ body.dark-theme .card-text {
     color: #FEF6E7;
 }
 
-body.dark-theme button:hover {
-    background-color: #27241D;
-    color: #FAEDF0;
+body.dark-theme .home-img {
+    display: none;
+}
+
+body.dark-theme .home-img-dark {
+    display: block !important;
 }
 
 body.dark-theme .navbar {
