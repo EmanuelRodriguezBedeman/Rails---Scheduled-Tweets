@@ -25,6 +25,12 @@ body.dark-theme {
     color: #FEF6E7;
 }
 
+body.dark-theme .alert-primary {
+    background-color: #C8C8C8;
+    border: solid 2px #007acc;
+    color: #00080C;
+}
+
 body.dark-theme .button-hover:hover {
     background-color: #1F1F1F !important;
     border-color: #007acc !important;
@@ -82,6 +88,12 @@ body.dark-theme textarea:focus,
 body.dark-theme input,
 body.dark-theme input:focus {
     background-color: #FEF6E7;
+}
+
+body.dark-theme .title-color-left,
+body.dark-theme .title-color-right {
+    background-color: #2ECFFC;
+    color: #141414;
 }
 
 body.dark-theme .tweet-body {

@@ -1,127 +1,141 @@
 body {
     background-color: #f5f8fa;
     background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
- }
+}
 
- .border-dark {
+.border-dark {
     border-color: #14171A !important;
     font-weight: 600;
- }
+}
 
- .btn-primary, .navbar {
-    background: rgb(14,84,176);
-    background: linear-gradient(0deg, rgba(14,84,176,1) 0%, rgba(10,60,125,1) 100%);
- }
+.btn-primary,
+.navbar {
+    background: rgb(14, 84, 176);
+    background: linear-gradient(0deg, rgba(14, 84, 176, 1) 0%, rgba(10, 60, 125, 1) 100%);
+}
 
- .bi-pencil, .bi-twitter {
+.bi-pencil,
+.bi-twitter {
     color: #1363DF;
- }
+}
 
- .button-hover:hover {
+.button-hover:hover {
     background: none;
     background-color: #F5F8FA !important;
     border-color: #06283D !important;
     color: #1363DF !important;
     font-weight: 600;
- }
+}
 
- .card {
+.card {
     border-color: #AAB8C2 !important;
- }
+}
 
- .card a:hover, a i:hover {
+.card a:hover,
+a i:hover {
     text-decoration: underline;
- }
+}
 
- .card-width{
+.card-width {
     max-width: 53.125em;
- }
+}
 
- .custom-anchor {
+.custom-anchor {
     color: #14171A;
     font-weight: 500;
     text-decoration: none;
- }
- 
- .custom-border {
+}
+
+.custom-border {
     height: 2.625rem !important;
- }
+}
 
- .custom-margin {
+.custom-margin {
     margin: 10rem 0 10rem;
- }
+}
 
- .custom-padding {
+.custom-padding {
     padding-bottom: 10rem;
- }
+}
 
- .description-text {
+.description-text {
     color: #0B0B0B;
- }
+}
 
- .footer {
+.feature-card-left {
+    border-radius: 0.625rem 4rem 4rem 0.625rem !important;
+}
+
+.feature-card-right {
+    border-radius: 4rem 0.625rem 0.625rem 4rem !important;
+}
+
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
- }
+}
 
- .navbar-brand:hover,
- .navbar-brand:hover i {
+.navbar-brand:hover,
+.navbar-brand:hover i {
     color: #FEF6E7 !important;
     /* font-size: 1.313rem; */
- }
+}
 
- .home-icon{
+.home-icon {
     font-size: 6rem !important;
-    color: linear-gradient(0deg, rgba(14,84,176,1) 0%, rgba(10,60,125,1) 100%);
- }
+    color: linear-gradient(0deg, rgba(14, 84, 176, 1) 0%, rgba(10, 60, 125, 1) 100%);
+}
 
- li a, .navbar-brand, li {
+li a,
+.navbar-brand,
+li {
     color: #e6e6e6 !important;
- }
+}
 
- .link-hover:hover, .btn-primary {
+.link-hover:hover,
+.btn-primary {
     color: #F5F8FA !important;
- }
+}
 
- .link-hover:hover {
+.link-hover:hover {
     color: #FEF6E7;
     text-decoration: underline;
- }
+}
 
- .navbar-toggler-icon {
+.navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(225, 232, 237)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
- }
+}
 
- .tweets-card {
+.tweets-card {
     background-color: #F5F8FA !important;
- }
+}
 
- .title-color-left {
-    background-color: #094491;
+.title-color-left {
+    background-color: #004476;
     border-radius: 0.625rem 6.25rem 6.25rem 0.625rem;
     color: #FAFBFE;
     padding-right: 1.563rem;
     padding-left: 0.438rem;
     width: fit-content;
- }
+}
 
-  .title-color-right {
-    background-color: #094491;
+.title-color-right {
+    background-color: #004476;
     border-radius: 6.25rem 0.625rem 0.625rem 6.25rem;
     color: #FAFBFE;
     padding-right: 0.438rem;
     padding-left: 1.563rem;
     width: fit-content;
- }
+}
 
- .vr {
+.vr {
     color: #e6e6e6 !important;
- }
+}
 
- /* Start of theme button/switch style */
+/* Start of theme button/switch style */
 
 .bi-lightbulb {
     font-size: 1.5rem;
@@ -138,7 +152,8 @@ body {
     border: 0.063rem solid #000000;
 }
 
-.dark-switch, #dark-button{
+.dark-switch,
+#dark-button {
     position: absolute;
     right: 2.5rem;
     bottom: 5rem;
@@ -195,7 +210,7 @@ body {
 .bi-sun {
     border-radius: 1rem;
     color: #FFFF00;
-    font-weight: bold; 
+    font-weight: bold;
     width: 1.15rem;
     height: 1.15rem;
     margin-right: 0.063rem;

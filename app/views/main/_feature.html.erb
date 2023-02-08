@@ -1,5 +1,5 @@
 <div id="features">
-    <div id="first-feature" class="card card-width border-0 custom-margin">
+    <div id="first-feature" class="card card-width feature-card-left border-0 custom-margin">
         <div class="row gx-0">
             <div class="col-md-3 mx-3">
                 <%= image_tag "mind.png", id:"mind-image", class:"col-4 col-md-12" %>
@@ -26,8 +26,8 @@
         </div>
     </div>
 
-    <div id="second-feature" class="card card-width border-0 custom-margin ms-auto">
-        <div class="d-none d-md-flex row gx-0">
+    <div id="second-feature-right" class="d-none d-md-flex card card-width feature-card-right border-0 custom-margin ms-auto">
+        <div class="row gx-0">
             <div class="col-md-8 ms-auto">
                 <div class="card-body mt-3 text-end">
                     <h5 class="card-title fs-2 text-end title-color-right ms-auto">Tired of watching the clock?</h5>
@@ -47,7 +47,10 @@
                 <%= image_tag "clock.png", id:"clock-image", class:"col-4 col-md-12" %>
             </div>
         </div>
-        <div class="d-md-none row gx-0">
+    </div>
+
+    <div id="second-feature-left" class="d-md-none card card-width feature-card-left border-0 custom-margin ms-auto">
+        <div class="row gx-0">
             <div class="col-md-3 mx-3">
                 <%= image_tag "clock-mirror.png", id:"clock-image", class:"col-4 col-md-12" %>
             </div>
@@ -69,7 +72,7 @@
         </div>
     </div>
 
-    <div id="third-feature" class="card card-width border-0 custom-margin">
+    <div id="third-feature" class="card card-width feature-card-left border-0 custom-margin">
         <div class="row gx-0">
             <div class="col-md-3 mx-3">
                 <%= image_tag "tweet.png", id:"mind-image", class:"col-4 col-md-12" %>
