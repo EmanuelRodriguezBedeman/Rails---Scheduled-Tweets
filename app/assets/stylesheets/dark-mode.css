@@ -1,3 +1,7 @@
+.form-floating {
+    color: #000000;
+}
+
 #dark-button {
     display: none;
 }
@@ -21,17 +25,42 @@ body.dark-theme {
     color: #FEF6E7;
 }
 
-body.dark-theme button:hover {
-    background-color: #27241D;
-    color: #FAEDF0;
+body.dark-theme .button-hover:hover {
+    background-color: #1F1F1F !important;
+    border-color: #007acc !important;
+    color: #007acc !important;
+    font-weight: bold;
+}
+
+body.dark-theme .btn {
+    background: none;
+    background-color: #1F1F1F;
+    border-color: #FEF6E7;
+    color: #FEF6E7;
 }
 
 body.dark-theme .card {
     background-color: #16181C !important;
 }
 
+body.dark-theme .card-header {
+    background-color: #423F3E;
+}
+
 body.dark-theme .card-text {
     color: #FEF6E7;
+}
+
+body.dark-theme .custom-anchor {
+    color: #FEF6E7;
+}
+
+body.dark-theme footer {
+    background-color: #FEF6E7;
+}
+
+body.dark-theme footer p {
+    color: #433E37;
 }
 
 body.dark-theme .home-img {
@@ -43,23 +72,9 @@ body.dark-theme .home-img-dark {
 }
 
 body.dark-theme .navbar {
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(41,44,49,1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(41, 44, 49, 1) 100%);
     color: #FAEDF0 !important;
-}
-
-body.dark-theme ul.nav a:hover, 
-body.dark-theme .navbar-brand:hover,
-body.dark-theme .navbar-brand:hover i {
-    color: #007acc !important;
-}
-
-body.dark-theme .dropdown-menu {
-    background-color: #625D52;
-}
-
-body.dark-theme .dropdown-item{
-    color: #FAEDF0;
 }
 
 body.dark-theme textarea,
@@ -69,19 +84,16 @@ body.dark-theme input:focus {
     background-color: #FEF6E7;
 }
 
-body.dark-theme .btn {
-    background-color: #FEF6E7 !important;
-    border-color: #FEF6E7 !important;
-    color: #504A40;
-    font-weight: bold;
+body.dark-theme .tweet-body {
+    color: #FEF6E7 !important;
+    opacity: 0.6;
 }
 
-body.dark-theme footer {
-    background-color: #FEF6E7;
-}
-
-body.dark-theme footer p {
-    color: #433E37;
+body.dark-theme ul.nav a:hover,
+body.dark-theme .custom-anchor:hover,
+body.dark-theme .navbar-brand:hover,
+body.dark-theme .navbar-brand:hover i {
+    color: #007acc !important;
 }
 
 /* Start of Dark-theme Switch */
