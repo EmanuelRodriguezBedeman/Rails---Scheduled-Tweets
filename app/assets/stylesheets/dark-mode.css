@@ -29,26 +29,9 @@ body.dark-theme .card-text {
     color: #FEF6E7;
 }
 
-body.dark-theme .text-primary{
-    background-color: #E8E6E1 !important;
-}
-
-body.dark-theme button {
-    background-color: #27241D;
-    color: #999999;
-}
-
 body.dark-theme button:hover {
     background-color: #27241D;
     color: #FAEDF0;
-}
-
-body.dark-theme a {
-    color: #00A2C7;
-}
-
-body.dark-theme a:hover {
-    color: #0092B3;
 }
 
 body.dark-theme .navbar {
@@ -69,15 +52,6 @@ body.dark-theme .dropdown-menu {
 
 body.dark-theme .dropdown-item{
     color: #FAEDF0;
-}
-
-body.dark-theme .dropdown-item:hover {
-    color: #FAEDF0;
-    background-color: #27241D;
-}
-
-body.dark-theme .ball {
-    background-color: #423F3E;
 }
 
 body.dark-theme textarea,
@@ -103,6 +77,10 @@ body.dark-theme footer p {
 }
 
 /* Start of Dark-theme Switch */
+
+body.dark-theme .ball {
+    background-color: #423F3E;
+}
 
 body.dark-theme .switch-label {
     background-color: #050505;
