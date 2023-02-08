@@ -27,7 +27,7 @@ body.dark-theme {
 
 body.dark-theme .alert-primary {
     background-color: #C8C8C8;
-    border: solid 2px #007acc;
+    border: solid 0.125rem #007acc;
     color: #00080C;
 }
 
