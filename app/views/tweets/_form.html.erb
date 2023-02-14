@@ -2,19 +2,19 @@
     <%= render "shared/form_errors", form: form %>
 
     <div class="mb-3">
-        <%= form.label :twitter_account_id, class: "form-label" %>
+        <%= form.label :twitter_account_id, class: "form-label fs-5 fw-semibold" %>
         <%= form.collection_select :twitter_account_id, Current.user.twitter_accounts, :id, :username, {}, {class: "form-control"} %>
     </div>
 
     <div class="mb-3">
-        <%= form.label :body, class: "form-label" %>
+        <%= form.label :body, class: "form-label fs-5 fw-semibold" %>
         <%= form.text_area :body, :maxlength => 280, class: "form-control" %>
     </div>
 
     <div class="mb-3">
-        <%= form.label :publish_at, class: "form-label" %>
+        <%= form.label :'publish_at:', class: "form-label fs-5 fw-semibold" %>
         <div class="form-control">
-        <%= form.datetime_select :publish_at %>
+            <%= form.datetime_select :publish_at%>
         </div>
     </div>
 
