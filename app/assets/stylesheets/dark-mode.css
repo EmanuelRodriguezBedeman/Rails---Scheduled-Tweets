@@ -45,6 +45,17 @@ body.dark-theme .btn {
     color: #FEF6E7;
 }
 
+body.dark-theme .btn-outline-danger {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-color: #DC3545 !important;
+}
+
+body.dark-theme .btn-outline-danger:hover {
+    background-color: #DC3545 !important;
+    border-color: #DC3545 !important;
+
+}
+
 body.dark-theme .card {
     background-color: #16181C !important;
 }
