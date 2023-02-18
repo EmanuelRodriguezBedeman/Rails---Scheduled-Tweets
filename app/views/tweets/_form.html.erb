@@ -1,20 +1,24 @@
 <%= form_with model: tweet, data: { turbo: true }, local: true do |form| %>
     <%= render "shared/form_errors", form: form %>
 
-    <div class="mb-3">
-        <%= form.label :twitter_account_id, class: "form-label fs-5 fw-semibold" %>
-        <%= form.collection_select :twitter_account_id, Current.user.twitter_accounts, :id, :username, {}, {class: "form-control"} %>
-    </div>
-
-    <div class="mb-3">
-        <%= form.label :body, class: "form-label fs-5 fw-semibold" %>
+    <div class="my-3">
+        <h4>Tweet content:</h4>
+        <!-- <%= form.label :body, "Tweet content:",class: "form-label fs-5 fw-semibold" %> -->
         <%= form.text_area :body, :maxlength => 280, class: "form-control" %>
     </div>
 
-    <div class="mb-3">
-        <%= form.label :'publish_at:', class: "form-label fs-5 fw-semibold" %>
-        <div class="form-control">
-            <%= form.datetime_select :publish_at%>
+    <div class="d-flex justify-content-between my-3">
+        <div class="d-inline-block">
+            <h4 class="d-inline-block me-3">Twitter account:</h4>
+            <!-- <%= form.label :twitter_account_id, "Twitter Account:", class: "form-label fs-5 fw-semibold" %> -->
+            <div class="d-inline-block">
+                <%= form.collection_select :twitter_account_id, Current.user.twitter_accounts, :id, :username, {}, {class: "form-select"} %>
+            </div>
+        </div>
+        <div class="d-inline-block">
+            <h4 class="d-inline-block  me-3">Publish at:</h4>
+            <!--<%= form.label :publish_at, "Publish at:", class: "form-label fs-5 fw-semibold me-3" %>-->
+            <%= form.datetime_select :publish_at, class:"d-inline-block" %>
         </div>
     </div>
 
