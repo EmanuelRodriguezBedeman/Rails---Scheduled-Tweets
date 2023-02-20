@@ -8,7 +8,7 @@
                     <span class="tweet-body fst-italic text-black-50 text-break">"<%= tweet.body %>"</span>
                 </div>
             </div>
-            <%= link_to "View Tweet", "https://twitter.com/#{tweet.twitter_account.username}/status/#{tweet.tweet_id}", class:"text-decoration-none ms-auto", target: :_blank %>
+            <%= link_to "View Tweet", "https://twitter.com/#{tweet.twitter_account.username}/status/#{tweet.tweet_id}", class:"view-tweet text-decoration-none ms-auto", target: :_blank %>
         <% else %>
             <%= image_tag tweet.twitter_account.image, class: "rounded-circle border border-2 border-primary p-1 border-opacity-50 me-3" %>
             <div class="d-flex align-items-start flex-column me-3">
