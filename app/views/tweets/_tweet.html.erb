@@ -6,6 +6,7 @@
                 <%= link_to "@#{tweet.twitter_account.username}:", "https://twitter.com/#{tweet.twitter_account.username}", target: :_blank, class: "custom-anchor" %>
                 <div>
                     <span class="tweet-body fst-italic text-black-50 text-break">"<%= tweet.body %>"</span>
+                    <%= button_to "Delete", tweet, method: :delete, form: { data: { turbo_confirm: 'Are you sure?' } }, class:"btn btn-outline-danger mx-0" %>
                 </div>
             </div>
             <%= link_to "View Tweet", "https://twitter.com/#{tweet.twitter_account.username}/status/#{tweet.tweet_id}", class:"view-tweet text-decoration-none ms-auto", target: :_blank %>
