@@ -5,8 +5,11 @@
             <div class="tweet-info d-flex align-items-start flex-column me-3">
                 <%= link_to "@#{tweet.twitter_account.username}:", "https://twitter.com/#{tweet.twitter_account.username}", target: :_blank, class: "custom-anchor" %>
                 <div>
-                    <p class="tweet-body fst-italic text-black-50 text-break">"<%= tweet.body %>"</p>
-                    <%= link_to 'Destroy?', tweet, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+                    <span class="tweet-body d-block fst-italic text-black-50 text-break">"<%= tweet.body %>"</span>
+                    <span>
+                        (<%= l tweet.publish_at, format: :short, class:"fst-italic" %>)
+                    </span>
+                    <%= link_to '<i class="bi bi-trash"></i>'.html_safe, tweet, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "" %>
                 </div>
             </div>
             <%= link_to "View Tweet", "https://twitter.com/#{tweet.twitter_account.username}/status/#{tweet.tweet_id}", class:"view-tweet text-decoration-none ms-auto", target: :_blank %>
@@ -15,7 +18,7 @@
             <div class="d-flex align-items-start flex-column me-3">
                 <%= link_to "@#{tweet.twitter_account.username}:", "https://twitter.com/#{tweet.twitter_account.username}", target: :_blank, class: "custom-anchor" %>
                 <div class="ScheduledTweet">
-                    <p class="tweet-body fst-italic text-black-50 text-break">"<%= tweet.body %>"</p>
+                    <span class="tweet-body fst-italic text-black-50 text-break">"<%= tweet.body %>"</span>
                     <%= link_to edit_tweet_path(tweet), class: "text-decoration-none" do %>
                         <i class="bi bi-pencil">edit</i>
                     <% end %>
