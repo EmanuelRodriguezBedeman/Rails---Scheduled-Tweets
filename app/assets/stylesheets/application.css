@@ -113,8 +113,12 @@ li {
     min-width: 5rem !important;
 }
 
-.tweets-card {
-    background-color: #F5F8FA !important;
+.trash-can {
+    color: #DC3545;
+}
+
+.trash-can:hover {
+    color: #FF0000;
 }
 
 .title-color-left {
@@ -133,6 +137,10 @@ li {
     padding-right: 0.438rem;
     padding-left: 1.563rem;
     width: fit-content;
+}
+
+.tweets-card {
+    background-color: #F5F8FA !important;
 }
 
 .vr {
