@@ -8,7 +8,7 @@
 
     <div class="d-flex justify-content-between my-3">
         <div class="d-inline-block">
-            <h4 class="d-inline-block me-3">Twitter account:</h4>
+            <h4 class="d-inline-block me-3">Select Twitter account:</h4>
             <div class="d-inline-block">
                 <%= form.collection_select :twitter_account_id, Current.user.twitter_accounts, :id, :username, {}, {class: "form-select"} %>
             </div>
