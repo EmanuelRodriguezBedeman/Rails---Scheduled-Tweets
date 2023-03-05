@@ -2,30 +2,30 @@
     <div>
         <h1>Introduction:</h1>
         <p>
-            This is a project made by me (<a class="" href="">Rodriguez Bedeman Emanuel</a>)
-            as a proof of my knowledge in Ruby On Rails and Docker.
+            This is a project made by me Rodriguez Bedeman Emanuel as a proof of my knowledge in Ruby On Rails and Docker.
         </p>
-        <p>On this project, you can create an account, link as many twitter accounts you have to it and schedule tweets to be posted when ever you want on different twitter accounts.</p>
+        <p>On this project, you can create an account, link as many twitter accounts as you want to it and schedule tweets to be posted when ever you want on any of your linked twitter accounts.</p>
+        <p>It also has a Dark mode made with Stimulus Javascript Framework</p>
     </div>
-    <hr>
+    <hr class="my-5">
     <div>
         <h1>How to use the app:</h1>
         <ol>
             <li>
-                <p><a class="" href="/sign-up">Create</a> your account.</p>
+                <p><a class="custom-anchor" href="/sign-up">Create</a> your account.</p>
             </li>
             <li>
-                <p><a class="" href="/log-in">Log</a> into it.</>
+                <p><a class="custom-anchor" href="/log-in">Log</a> into it.</>
             </li>
             <li>
                 <p>
-                    Go to <a class="" href="/twitter_accounts">Twitter accounts</a> and link as many twitter accounts as you want, to the account created on this site, 
+                    Go to <a class="custom-anchor" href="/twitter_accounts">Twitter accounts</a> and link as many twitter accounts as you want, to the account created on this site, 
                     by clicking on <button class="btn btn-primary button-hover">Add account</button>
                 </p>
                 <p class="opacity-75"><u>Disclaimer</u>: I won't store or be able to access any of your twitter information. All this is handled by Twitter API, and it's tokens.</p>
             </li>
             <li>
-                <p>To schedule a tweet, click on <a class="" href="/tweets">Tweets</a> on the upper left part of the site.</p>
+                <p>To schedule a tweet, click on <a class="custom-anchor" href="/tweets">Tweets</a> on the upper left part of the site.</p>
             </li>
             <li>
                 <p>Click on <button class="btn btn-primary button-hover">Schedule a tweet</button></p>
@@ -41,26 +41,40 @@
             </li>
         </ol>
     </div>
-    <hr>
-    <div>
-        <h1 class="text-center text-decoration-underline">Tweets states</h1>
+    <hr class="my-5">
+    <div class="text-center">
+        <h1 class="text-decoration-underline">Tweets states</h1>
         <div class="my-5">
-            <h2 class="text-center fst-italic">Scheduled</h2>
+            <h2 class="fst-italic">Scheduled</h2>
             <%= image_tag "tweet scheduled.png" %>
-            <ul>
-                <li>
-
-                </li>
-            </ul>
+            <div class="my-3">
+                <ul class="text-start">
+                    <li>
+                        <span class="fw-bold">@TweeterID</span> → Click it to be redirected to the tweeter page who owns the tweet.
+                    </li>
+                    <li>
+                        <i class="bi bi-pencil bg-white"> edit </i> → To edit the Tweet before posting.
+                    </li>
+                    <li>
+                        On the right, is the scheduled date.
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="my-5">
-            <h2 class="text-center fst-italic">Published</h2>
+            <h2 class="fst-italic">Published</h2>
             <%= image_tag "tweet published.png"%>
-            <ul>
-                <li>
-
-                </li>
-            </ul>
+            <div class="my-3">
+                <ul class="text-start">
+                    <li>
+                        <a class="view-tweet text-decoration-none ms-auto bg-white"> View Tweet </a> → Redirects you to the tweeter's page to see the published tweet.
+                    </li>
+                    <li>
+                        <i class="bi bi-trash3-fill trash-can"></i> → Click it to delete the tweet.
+                        <p class="opacity-75"><u>NOTE</u>: It won't delete the tweet on twitter, only on this site.</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

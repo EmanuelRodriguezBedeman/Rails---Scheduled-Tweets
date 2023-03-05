@@ -35,7 +35,7 @@ body.dark-theme .button-hover:hover {
     background-color: #1F1F1F !important;
     border-color: #007acc !important;
     color: #007acc !important;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 body.dark-theme .btn {
