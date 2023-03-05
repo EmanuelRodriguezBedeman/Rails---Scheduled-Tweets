@@ -1,12 +1,66 @@
 <div class="container">
-    <h1>Introduction:</h1>
-    <p>
-        This is a project made by <a class="" href="">Rodriguez Bedeman Emanuel</a>
-        to show my knowledge mostly about Ruby On rails and Docker.
-    </p>
+    <div>
+        <h1>Introduction:</h1>
+        <p>
+            This is a project made by me (<a class="" href="">Rodriguez Bedeman Emanuel</a>)
+            as a proof of my knowledge in Ruby On Rails and Docker.
+        </p>
+        <p>On this project, you can create an account, link as many twitter accounts you have to it and schedule tweets to be posted when ever you want on different twitter accounts.</p>
+    </div>
+    <hr>
+    <div>
+        <h1>How to use the app:</h1>
+        <ol>
+            <li>
+                <p><a class="" href="/sign-up">Create</a> your account.</p>
+            </li>
+            <li>
+                <p><a class="" href="/log-in">Log</a> into it.</>
+            </li>
+            <li>
+                <p>
+                    Go to <a class="" href="/twitter_accounts">Twitter accounts</a> and link as many twitter accounts as you want, to the account created on this site, 
+                    by clicking on <button class="btn btn-primary button-hover">Add account</button>
+                </p>
+                <p class="opacity-75"><u>Disclaimer</u>: I won't store or be able to access any of your twitter information. All this is handled by Twitter API, and it's tokens.</p>
+            </li>
+            <li>
+                <p>To schedule a tweet, click on <a class="" href="/tweets">Tweets</a> on the upper left part of the site.</p>
+            </li>
+            <li>
+                <p>Click on <button class="btn btn-primary button-hover">Schedule a tweet</button></p>
+            </li>
+            <li>
+                <p>Enter the content of your tweet, select the account you want to use and select the publish data.</p>
+            </li>
+            <li>
+                <p>Once you're done, click on <button button class="btn btn-primary button-hover">Schedule</button></p>
+            </li>
+            <li>
+                <p>When the time has come, your tweet will be published!</p>
+            </li>
+        </ol>
+    </div>
+    <hr>
+    <div>
+        <h1 class="text-center text-decoration-underline">Tweets states</h1>
+        <div class="my-5">
+            <h2 class="text-center fst-italic">Scheduled</h2>
+            <%= image_tag "tweet scheduled.png" %>
+            <ul>
+                <li>
 
-    <h4>
-        After  <a class="" href="/sign-up">creating your account</a>
-        and <a class="" href="/log-in">and log into it</a>,
-    </h4>
+                </li>
+            </ul>
+        </div>
+        <div class="my-5">
+            <h2 class="text-center fst-italic">Published</h2>
+            <%= image_tag "tweet published.png"%>
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
