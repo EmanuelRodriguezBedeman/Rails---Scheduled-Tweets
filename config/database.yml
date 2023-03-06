@@ -20,10 +20,15 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: <%= ENV['POSTGRES_HOST'] %>
+  port: 5432
+
 
 development:
   <<: *default
   database: scheduled_tweets_development
+  username:  <%= ENV['POSTGRES_USER'] %>
+  password:  <%= ENV['POSTGRES_PASSWORD'] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +63,8 @@ development:
 test:
   <<: *default
   database: scheduled_tweets_test
+  username:  <%= ENV['POSTGRES_USER'] %>
+  password:  <%= ENV['POSTGRES_PASSWORD'] %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +88,6 @@ test:
 #
 production:
   <<: *default
-  database: scheduled_tweets_production
-  username: scheduled_tweets
-  password: <%= ENV["SCHEDULED_TWEETS_DATABASE_PASSWORD"] %>
+  database:  <%= ENV['POSTGRES_DB'] %>
+  username:  <%= ENV['POSTGRES_USER'] %>
+  password:  <%= ENV['POSTGRES_PASSWORD'] %>
