@@ -1,5 +1,3 @@
-# README
-
 <div align="center">
   <img src="https://user-images.githubusercontent.com/93904438/223526037-b42584f9-e494-4006-9210-2ee4bb0acebf.png" />
 </div>
