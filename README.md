@@ -16,5 +16,5 @@
 - **Full Portability mode**
 
 > ### **IMPORTANT:**
-> #### Since there isn't a Free Hosting service that can house the app, the only way to use it properly is by following my [instructions and using docker](https://github.com/EmanuelRodriguezBedeman/Docker-ScheduleTweets). 
+> #### Since there isn't a Free Hosting service that can house the whole app, for nowm, the only way to properly use it is by following my [instructions and using docker](https://github.com/EmanuelRodriguezBedeman/Docker-ScheduleTweets). 
 > #### I'm working with [Ngrok](https://ngrok.com/) on a way to host it with my computer so with a link, you can use the app.
