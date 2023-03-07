@@ -2,7 +2,8 @@
   <img src="https://user-images.githubusercontent.com/93904438/223526037-b42584f9-e494-4006-9210-2ee4bb0acebf.png" />
 </div>
 
-<h2 align="center">An app to manage and plan all your tweets ideas your tweeter accounts!</h2>
+<h3 align="center">An app to manage and plan all your tweets ideas your tweeter accounts!</h3>
+<p align="center">By just creating your account, you can gather all your tweeter accounts in one place and schedule your tweets for each one of them and they'll be posted on the date that you decide!</p>
 
 ## Tech used on this project:
 
