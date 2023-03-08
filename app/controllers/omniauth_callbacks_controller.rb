@@ -1,9 +1,6 @@
 class OmniauthCallbacksController < ApplicationController
     def twitter
-
-        # To print the content of the API credentials
-        Rails.logger.info auth
-
+        
         begin
             twitter_account = Current.user.twitter_accounts.where(username: auth.info.nickname).first_or_initialize
             twitter_account.update(

@@ -3,7 +3,7 @@
 </div>
 
 <h3 align="center">An app to manage and plan all your tweets ideas your tweeter accounts!</h3>
-<p align="center">By just creating your account, you can gather all your tweeter accounts in one place and schedule your tweets for each one of them and they'll be posted on the date that you decide!</p>
+<p align="center">By just creating your account on the app, you can gather all your tweeter accounts in one place and schedule your tweets for each one of them and they'll be posted on the date that you decide!</p>
 
 ## Tech used on this project:
 
