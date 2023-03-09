@@ -8,6 +8,7 @@
 ## Tech used on this project:
 
 - **Ruby on Rails 7**
+- **Docker**
 - **Twitter API**
 - **PostgreSQL**
 - **Redis**
