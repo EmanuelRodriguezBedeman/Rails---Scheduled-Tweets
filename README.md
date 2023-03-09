@@ -13,6 +13,8 @@
 - **Redis**
 - **Sidekiq** (for Background Jobs)
 - **Stimulus** (JavaSript Framework used for the Dark Mode)
+- **Devise**
+- **Omniauth**
 - **Bootstrap and Custom CSS**
 - **Portability and responsiveness support**
 
