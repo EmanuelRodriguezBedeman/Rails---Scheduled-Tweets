@@ -23,4 +23,4 @@
 > #### Since there isn't a free hosting service that offers free background workers, the only way to use it is though ngrok.
 > #### If you want to the use the app, send me an email to emanuel.rodriguez.bedeman@hotmail.com or message me though https://www.linkedin.com/in/emanuel-rodriguez-bedeman/
 
-If you would like to know how to setup quickly Docker for this kind of Rails project, you can check it https://github.com/EmanuelRodriguezBedeman/Docker-ScheduleTweets.
+If you would like to know how to setup quickly Docker for this kind of Rails project, you can check it [in here](https://github.com/EmanuelRodriguezBedeman/Docker-ScheduleTweets).
