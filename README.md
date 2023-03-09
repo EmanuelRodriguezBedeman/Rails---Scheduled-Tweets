@@ -20,5 +20,7 @@
 - **Portability and responsiveness support**
 
 > ### **IMPORTANT:**
-> #### Since there isn't a Free Hosting service that can house the whole app, for nowm, the only way to properly use it is by following my [instructions and using docker](https://github.com/EmanuelRodriguezBedeman/Docker-ScheduleTweets). 
-> #### I'm working with [Ngrok](https://ngrok.com/) on a way to host it with my computer so with a link, you can use the app.
+> #### Since there isn't a free hosting service that offers free background workers, the only way to use it is by ngrok.
+> #### If you want to the use the app, send me an email to emanuel.rodriguez.bedeman@hotmail.com or message me though https://www.linkedin.com/in/emanuel-rodriguez-bedeman/
+
+If you would like to know how to setup quickly Docker for this kind of Rails project, you can check it https://github.com/EmanuelRodriguezBedeman/Docker-ScheduleTweets.
