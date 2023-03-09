@@ -7,7 +7,9 @@
         <p>On this project, you can create an account, link as many twitter accounts as you want to it and schedule tweets to be posted when ever you want on any of your linked twitter accounts.</p>
         <p>It also has a Dark mode made with Stimulus Javascript Framework</p>
     </div>
+
     <hr class="my-5">
+
     <div>
         <h1>How to use the app:</h1>
         <ol>
@@ -41,16 +43,23 @@
             </li>
         </ol>
     </div>
+
     <hr class="my-5">
-    <div class="text-center">
-        <h1 class="text-decoration-underline">Tweets states</h1>
-        <div class="my-5">
+
+    <div class="">
+        <h1 class="text-center text-decoration-underline">Tweets states:</h1>
+        <div class="my-5 py-5">
             <h2 class="fst-italic">Scheduled</h2>
-            <%= image_tag "tweet scheduled.png" %>
+            <div class="d-none d-md-block">
+                <%= image_tag "tweet scheduled lg.png" %>
+            </div>
+            <div class="d-md-none">
+                <%= image_tag "tweet scheduled sm.png", class:"col-12" %>
+            </div>
             <div class="my-3">
                 <ul class="text-start">
                     <li>
-                        <span class="fw-bold">@TweeterID</span> → Click it to be redirected to the tweeter page who owns the tweet.
+                        <span class="fw-bold">@TweeterID</span> → Shows you the it's tweeter profile.
                     </li>
                     <li>
                         <i class="bi bi-pencil bg-white"> edit </i> → To edit the Tweet before posting.
@@ -61,13 +70,19 @@
                 </ul>
             </div>
         </div>
+
         <div class="my-5">
             <h2 class="fst-italic">Published</h2>
-            <%= image_tag "tweet published.png"%>
+            <div class="d-none d-md-block">
+                <%= image_tag "tweet published lg.png"%>
+            </div>
+            <div class="d-md-none">
+                <%= image_tag "tweet published sm.png", class:"col-12"%>
+            </div>
             <div class="my-3">
                 <ul class="text-start">
                     <li>
-                        <a class="view-tweet text-decoration-none ms-auto bg-white"> View Tweet </a> → Redirects you to the tweeter's page to see the published tweet.
+                        <a class="view-tweet text-decoration-none ms-auto bg-white"> View Tweet </a> → Shows you the published tweet.
                     </li>
                     <li>
                         <i class="bi bi-trash3-fill trash-can"></i> → Click it to delete the tweet.
