@@ -14,7 +14,7 @@
 - **Sidekiq** (for Background Jobs)
 - **Stimulus** (JavaSript Framework used for the Dark Mode)
 - **Bootstrap and Custom CSS**
-- **Full Portability mode**
+- **Full Portability and responsiveness**
 
 > ### **IMPORTANT:**
 > #### Since there isn't a Free Hosting service that can house the whole app, for nowm, the only way to properly use it is by following my [instructions and using docker](https://github.com/EmanuelRodriguezBedeman/Docker-ScheduleTweets). 
