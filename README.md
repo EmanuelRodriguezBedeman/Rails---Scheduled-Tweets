@@ -8,14 +8,19 @@
 ## Tech used on this project:
 
 - **Ruby on Rails 7**
+- **Docker**
 - **Twitter API**
 - **PostgreSQL**
 - **Redis**
 - **Sidekiq** (for Background Jobs)
 - **Stimulus** (JavaSript Framework used for the Dark Mode)
+- **Devise**
+- **Omniauth**
 - **Bootstrap and Custom CSS**
 - **Portability and responsiveness support**
 
 > ### **IMPORTANT:**
-> #### Since there isn't a Free Hosting service that can house the whole app, for nowm, the only way to properly use it is by following my [instructions and using docker](https://github.com/EmanuelRodriguezBedeman/Docker-ScheduleTweets). 
-> #### I'm working with [Ngrok](https://ngrok.com/) on a way to host it with my computer so with a link, you can use the app.
+> #### Since there isn't a free hosting service that offers free background workers, the only way to use it is though ngrok.
+> #### If you want to the use the app, send me an email to emanuel.rodriguez.bedeman@hotmail.com or message me though [linkedin](https://www.linkedin.com/in/emanuel-rodriguez-bedeman/)
+
+If you would like to know how to setup Docker quickly for this kind of Rails project, you can check it [in here](https://github.com/EmanuelRodriguezBedeman/Docker-ScheduleTweets).
