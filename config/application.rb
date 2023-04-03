@@ -6,6 +6,8 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+config.exceptions_app = self.routes
+
 module ScheduledTweets
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
@@ -22,3 +24,5 @@ module ScheduledTweets
     config.time_zone = "Buenos Aires"
   end
 end
+
+config.exceptions_app = self.routes
