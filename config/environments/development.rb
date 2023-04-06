@@ -5,7 +5,7 @@ Rails.application.configure do
 
   config.eager_load = false
 
-  config.consider_all_requests_local = true
+  config.consider_all_requests_local = false
 
   config.server_timing = true
 

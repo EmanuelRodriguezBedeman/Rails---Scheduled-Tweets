@@ -1,3 +1,13 @@
-<div id="errorPage" class="d-flex justify-content-center">
-    <%= image_tag "computer.png", id:"not-found-image", class:"w-25" %>
+<div id="404Page" class="d-flex text-center justify-content-center align-items-center">
+    <div>
+        <h1 class="fw-bold fs-1"> 
+            <%= response.status %>:
+            <%= action_name.humanize %> 
+        </h1>
+        <div class="mb-5">
+            <p class="">This page doesn't exist.</p>
+            <%= link_to "Go to home page", root_path, class: "" %>
+        </div> 
+        <%= image_tag "computer.png", id:"not-found-image"%>
+    </div>
 </div>
