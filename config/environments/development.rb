@@ -23,7 +23,7 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
-  config.hosts << /[a-z0-9-.]+\.ngrok\.io/
+  config.hosts << /[a-z0-9-.]+\.ngrok\-free.app/
 
   config.active_storage.service = :local
 
